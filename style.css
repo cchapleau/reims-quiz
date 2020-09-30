@@ -13,3 +13,70 @@ body {
     width: 100%;
     min-height: 90vh;
 }
+
+.GO {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 45%;
+        margin-top: 16%;
+        width: 185px;
+        height: 185px;
+        background:#d6a7d2;
+        font:bold 13px Arial;
+        border-radius:50%;
+        border:none;
+        color:#fff;
+}
+input[type="radio"] {
+    width: 300px;
+    height: 30px;
+    border-radius: 15px;
+    border: 2px solid #6ae63a;
+    background-color: white;
+    -webkit-appearance: none; /*to disable the default appearance of radio button*/
+    -moz-appearance: none;
+  }
+  
+  input[type="radio"]:focus { /*no need, if you don't disable default appearance*/
+    outline: none; /*to remove the square border on focus*/
+  }
+  
+  input[type="radio"]:checked { /*no need, if you don't disable default appearance*/
+    background-color: #1FBED6;
+  }
+  
+  input[type="radio"]:checked ~ span:first-of-type {
+    color: white;
+  }
+  
+  label span:first-of-type {
+    position: relative;
+    left: -200px;
+    font-size: 15px;
+    color: #1FBED6;
+  }
+  
+  label span {
+    position: relative;
+    top: -12px;
+  }
+  #reponse1 {
+    display: none;
+  }
+  input[type="text"]{
+      color: transparent;
+      text-shadow: 0 0 0 #000;
+      padding: 6px 12px;
+      width: 150px;
+      cursor: pointer;
+  }
+  input[type="text"]:focus{
+      outline: none;
+  }
+  input:checked + #reponse1 {
+    display: block;
+  }
+  
+
+  
