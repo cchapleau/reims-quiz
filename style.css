@@ -9,7 +9,44 @@ body {
 }
 
 .presentation {
-    background-image: url("https://raw.githubusercontent.com/cchapleau/reims-quiz/master/img/exemple-banner-image.jpg");
+    background-image: url(img/neige.jpg);
+    min-height: 100vh;
+    border: 50px solid rgb(221, 3, 3);
+    box-sizing: border-box;
+    border-radius: 50% / 10%;
     width: 100%;
-    min-height: 90vh;
+}
+
+.reims{
+    display: flex;
+    justify-content: center;
+}
+
+.blue{
+    font-size: 200px;
+    background-color: rgb(10, 10, 180);
+    color: white;
+    margin: 20px;
+}
+
+.quiz{
+    display: flex;
+    justify-content: center;
+}
+
+.red{
+    font-size: 200px;
+    background-color: rgb(211, 7, 7);
+    color: white;
+    margin: 20px;
+}
+
+.yellow{
+    font-size: 200px;
+    background-color: #E9D107;
+    color: white;
+}
+
+h1{
+    display: none;
 }
