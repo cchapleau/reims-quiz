@@ -1,0 +1,15 @@
+body {
+    margin: 0 auto;
+    cursor: default;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+}
+
+.presentation {
+    background-image: url("https://raw.githubusercontent.com/cchapleau/reims-quiz/master/img/exemple-banner-image.jpg");
+    width: 100%;
+    min-height: 90vh;
+}
