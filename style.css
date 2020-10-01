@@ -88,10 +88,10 @@ input[type="radio"] {
       outline: none;
   }
   input:checked + .rightAnswer {
-    display: inline;
+    display: block;
   }
   input:checked + .wrongAnswer {
-    display: inline;
+    display: block;
   }
           /* HEADER */
   
