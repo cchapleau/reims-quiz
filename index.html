@@ -52,7 +52,8 @@
 						<form action="#" oninput="score.value=parseInt(answers1.value)+parseInt(answers2.value)+parseInt(answers3.value)|0">
 							<!-- QUESTION 1 -->
 							 <h3>Question 1</h3>
-							 	<p>Quel monument de Reims à vu le sacre de plusieurs rois?</p>
+								 <p>Quel monument de Reims à vu le sacre de plusieurs rois?</p>
+								 <div class="question1contenair">
 									<label for="a1Q1">
 									 <input type="radio" id="a1Q1" name="answers1" value="1"/>
 							 			<div class="wrongAnswer">
@@ -81,10 +82,12 @@
 											<p>Mauvaise réponse !</p>
 										</div>
 							 		<span>L'étoile de la Mort</span>
-						   			</label>
+									   </label>
+							     </div>
 							  <!-- QUESTION 2 -->
 							 <h3 id="Q2">Question 2</h3>
 							 <p>Quels sont les pré-requis pour intégrer la Wild Code School?</p>
+							 <div class="question1contenair">
 							 <label for="a1Q2">
 								 <input type="radio" id="a1Q2" name="answers2" value="1"/>
 								 <div id="rightAnswer">
@@ -114,9 +117,11 @@
 								</div>
 								 <span>Posséder un ordinateur portable</span>
 							   </label>
+							 </div>
 							  <!-- QUESTION 3  -->								
 							 <h3 id="Q3">Question 3</h3>
-							 	<p>Un japonais à construit une chapelle dans Reims, quel est sont nom?</p>
+								 <p>Un japonais à construit une chapelle dans Reims, quel est sont nom?</p>
+								 <div class="question1contenair">
 							   <label for="a1Q3">
 							  	 <input type="radio" id="a1Q3" name="answers3" value="1"/>
 									 <div class="wrongAnswer">
@@ -145,7 +150,8 @@
 										<p>Mauvaise réponse !</p>
 									 </div>
 								  <span>La chapelle Osaka</span>
-							   </label> 	
+							   </label> 
+							</div>	
 							 <output name="score" for="answers1 answers2 answers3"></output>
 						 </form>
 					</div>
