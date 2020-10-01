@@ -10,7 +10,7 @@ body {
 
 .presentation {
     background-image: url(img/neige.jpg);
-    min-height: 100vh;
+    min-height: 90vh;
     border: 50px solid rgb(221, 3, 3);
     box-sizing: border-box;
     border-radius: 50% / 10%;
@@ -115,4 +115,26 @@ input[type="radio"] {
 
 h1{
     display: none;
+}
+
+@media screen and (max-width:960px){
+
+  .presentation{
+      min-height: 60vh;
+      border: 20px solid rgb(221, 3, 3);
+      }
+
+  .blue{
+      font-size: 15vw;
+      margin: 5px;
+      }
+
+  .red{
+      font-size: 15vw;
+      margin: 5px;
+      }
+   
+  .yellow{
+      font-size: 15vw;
+      }
 }
