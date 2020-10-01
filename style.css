@@ -93,6 +93,7 @@ input[type="radio"] {
     background-color: rgb(10, 10, 180);
     color: white;
     margin: 20px;
+    transform: rotate(10deg);
 }
 
 .quiz{
@@ -137,4 +138,5 @@ h1{
   .yellow{
       font-size: 15vw;
       }
+  
 }
