@@ -49,88 +49,89 @@
 				<div class="question-quiz">
 					<h2>Présentation du Quiz</h2>
 					<div class="questions">
-						<form action="#">
-				           <!-- QUESTION 1 -->
-							<h3>Question 1</h3>
-							<br><br><br><br>
-							<label for="a1Q1">
-							<input type="radio" id="a1Q1" name="answers" value="1"/>
-							<div id="reponse1">
-								<p>félicitation tu as trouvé la bonne réponse</p>
-								<button><a href="#Q2" target="_blank">Question suivante</a></button>
-								</div>
-							<span>REPONSE 1</span>
-						  </label>
-						  <br/>
-						  <label for="a2Q1">
-							<input type="radio" id="a2Q1" name="answers" value="0"/>
-							<span>REPONSE 2</span>
-						  </label>
-						  <br/>
-						  <label for="a3Q1">
-							<input type="radio" id="a3Q1" name="answers" value="0"/>
-							<span>REPONSE 3</span>
-						  </label>
-						  <br/>
-						  <label for="a4Q1">
-							<input type="radio" id="a4Q1" name="answers" value="0"/>
-							<span>REPONSE 4</span>
-						  </label>
-								<br><br>
-							 <!-- QUESTION 2 -->
-							<h3 id="Q2">Question 2</h3>
-							<br><br><br><br>
-							<label for="a1Q2">
-								<input type="radio" id="a1Q2" name="answers" value="1"/>
-								<div id="reponse1">
-									<p>félicitation tu as trouvé la bonne réponse</p>
-									<button><a href="#Q3" target="_blank">Question suivante</a></button>
-									</div>
-								<span>REPONSE 1</span>
-							  </label>
-							  <br/>
-							  <label for="a2Q2">
-								<input type="radio" id="a2Q2" name="answers" value="0"/>
-								<span>REPONSE 2</span>
-							  </label>
-							  <br/>
-							  <label for="a3Q2">
-								<input type="radio" id="a3Q2" name="answers" value="0"/>
-								<span>REPONSE 3</span>
-							  </label>
-							  <br/>
-							  <label for="a4Q2">
-								<input type="radio" id="a4Q2" name="answers" value="0"/>
-								<span>REPONSE 4</span>
-							  </label>
-								<br><br>
-							 <!-- QUESTION 3  -->								
-							<h3 id="Q3">Question 3</h3>
-							<br><br><br><br>
-							<label for="a1Q3">
-								<input type="radio" id="a1Q3" name="answers" value="1"/>
-								<div id="reponse1">
-									<p>félicitation tu as trouvé la bonne réponse</p>
-									<button><a href="#Q4" target="_blank">Question suivante</a></button>
-									</div>
-								<span>REPONSE 1</span>
-							  </label>
-							  <br/>
-							  <label for="a2Q3">
-								<input type="radio" id="a2Q3" name="answers" value="0"/>
-								<span>REPONSE 2</span>
-							  </label>
-							  <br/>
-							  <label for="a3Q3">
-								<input type="radio" id="a3Q3" name="answers" value="0"/>
-								<span>REPONSE 3</span>
-							  </label>
-							  <br/>
-							  <label for="a4Q3">
-								<input type="radio" id="a4Q3" name="answers" value="0"/>
-								<span>REPONSE 4</span>
-							  </label>
-						</form>
+						<form action="#" oninput="score.value=parseInt(answers1.value)+parseInt(answers2.value)+parseInt(answers3.value)|0">
+							<!-- QUESTION 1 -->
+							 <h3>Question 1</h3>
+							 <br><br><br><br>
+							 <label for="a1Q1">
+							 <input type="radio" id="a1Q1" name="answers1" value="1"/>
+							 <div id="reponse1">
+								 <p>félicitation tu as trouvé la bonne réponse</p>
+								 <button><a href="#Q2" target="_blank">Question suivante</a></button>
+								 </div>
+							 <span>REPONSE 1</span>
+						   </label>
+						   <br/>
+						   <label for="a2Q1">
+							 <input type="radio" id="a2Q1" name="answers1" value="0"/>
+							 <span>REPONSE 2</span>
+						   </label>
+						   <br/>
+						   <label for="a3Q1">
+							 <input type="radio" id="a3Q1" name="answers1" value="0"/>
+							 <span>REPONSE 3</span>
+						   </label>
+						   <br/>
+						   <label for="a4Q1">
+							 <input type="radio" id="a4Q1" name="answers1" value="0"/>
+							 <span>REPONSE 4</span>
+						   </label>
+								 <br><br>
+							  <!-- QUESTION 2 -->
+							 <h3 id="Q2">Question 2</h3>
+							 <br><br><br><br>
+							 <label for="a1Q2">
+								 <input type="radio" id="a1Q2" name="answers2" value="1"/>
+								 <div id="reponse1">
+									 <p>félicitation tu as trouvé la bonne réponse</p>
+									 <button><a href="#Q3" target="_blank">Question suivante</a></button>
+									 </div>
+								 <span>REPONSE 1</span>
+							   </label>
+							   <br/>
+							   <label for="a2Q2">
+								 <input type="radio" id="a2Q2" name="answers2" value="0"/>
+								 <span>REPONSE 2</span>
+							   </label>
+							   <br/>
+							   <label for="a3Q2">
+								 <input type="radio" id="a3Q2" name="answers2" value="0"/>
+								 <span>REPONSE 3</span>
+							   </label>
+							   <br/>
+							   <label for="a4Q2">
+								 <input type="radio" id="a4Q2" name="answers2" value="0"/>
+								 <span>REPONSE 4</span>
+							   </label>
+								 <br><br>
+							  <!-- QUESTION 3  -->								
+							 <h3 id="Q3">Question 3</h3>
+							 <br><br><br><br>
+							 <label for="a1Q3">
+								 <input type="radio" id="a1Q3" name="answers3" value="1"/>
+								 <div id="reponse1">
+									 <p>félicitation tu as trouvé la bonne réponse</p>
+									 <button><a href="#Q4" target="_blank">Question suivante</a></button>
+									 </div>
+								 <span>REPONSE 1</span>
+							   </label>
+							   <br/>
+							   <label for="a2Q3">
+								 <input type="radio" id="a2Q3" name="answers3" value="0"/>
+								 <span>REPONSE 2</span>
+							   </label>
+							   <br/>
+							   <label for="a3Q3">
+								 <input type="radio" id="a3Q3" name="answers3" value="0"/>
+								 <span>REPONSE 3</span>
+							   </label>
+							   <br/>
+							   <label for="a4Q3">
+								 <input type="radio" id="a4Q3" name="answers" value="0"/>
+								 <span>REPONSE 4</span>
+							   </label> 	
+							 <output name="score" for="answers1 answers2 answers3"></output>
+						 </form>
 					</div>
 				</div>
 			</section>
