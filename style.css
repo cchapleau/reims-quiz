@@ -10,7 +10,7 @@ body {
 
 .presentation {
     background-image: url(img/neige.jpg);
-    min-height: 100vh;
+    min-height: 90vh;
     border: 50px solid rgb(221, 3, 3);
     box-sizing: border-box;
     border-radius: 50% / 10%;
@@ -31,41 +31,51 @@ body {
         border:none;
         color:#fff;
 }
+                    /* CHOIX REPONSES */
+.questioncontenair {
+  display: flex;
+  width: 100%;
+  height: 250px;
+  justify-content: space-around;
+
+}
 input[type="radio"] {
     width: 300px;
     height: 30px;
     border-radius: 15px;
-    border: 2px solid #6ae63a;
-    background-color: white;
-    -webkit-appearance: none; /*to disable the default appearance of radio button*/
+    border: 2px solid hsl(103, 77%, 56%);
+    background-color: hsl(103, 77%, 56%);
+    -webkit-appearance: none; 
     -moz-appearance: none;
   }
   
-  input[type="radio"]:focus { /*no need, if you don't disable default appearance*/
-    outline: none; /*to remove the square border on focus*/
+  input[type="radio"]:focus { 
+    outline: none; 
   }
   
-  input[type="radio"]:checked { /*no need, if you don't disable default appearance*/
-    background-color: #1FBED6;
+  input[type="radio"]:checked { 
+    background-color: yellow;
   }
-  
-  input[type="radio"]:checked ~ span:first-of-type {
-    color: white;
-  }
-  
+    
   label span:first-of-type {
     position: relative;
-    left: -200px;
     font-size: 15px;
-    color: #1FBED6;
+    left: -245px;
+    color: white;
   }
   
   label span {
     position: relative;
     top: -12px;
   }
-  #reponse1 {
+                        /* DISSIMULATION DES MAUVAISES/BONNE REPONSES */
+  .rightAnswer {
     display: none;
+    color: green;
+  }
+  .wrongAnswer {
+    display: none;
+    color: red;
   }
   input[type="text"]{
       color: transparent;
@@ -77,9 +87,13 @@ input[type="radio"] {
   input[type="text"]:focus{
       outline: none;
   }
-  input:checked + #reponse1 {
+  input:checked + .rightAnswer {
     display: block;
   }
+  input:checked + .wrongAnswer {
+    display: block;
+  }
+          /* HEADER */
   
 
   
@@ -93,6 +107,7 @@ input[type="radio"] {
     background-color: rgb(10, 10, 180);
     color: white;
     margin: 20px;
+    transform: rotate(10deg);
 }
 
 .quiz{
@@ -115,4 +130,27 @@ input[type="radio"] {
 
 h1{
     display: none;
+}
+
+@media screen and (max-width:960px){
+
+  .presentation{
+      min-height: 60vh;
+      border: 20px solid rgb(221, 3, 3);
+      }
+
+  .blue{
+      font-size: 15vw;
+      margin: 5px;
+      }
+
+  .red{
+      font-size: 15vw;
+      margin: 5px;
+      }
+   
+  .yellow{
+      font-size: 15vw;
+      }
+  
 }
