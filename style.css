@@ -1,140 +1,377 @@
+/***** GENERAL - BEGIN *****/
+
 body {
-    margin: 0 auto;
-    cursor: default;
+  margin: 0 auto;
+  cursor: default;
+  background-color: #000;
 }
+
+header {
+  position: sticky;
+  top: 0px;
+}
+
+h1 {
+  display: none;
+}
+
+h2 {
+  text-align: center;
+}
+
+.next-question {
+  position: absolute;
+}
+
+footer {
+  margin: 0 auto;
+}
+
+/***** GENERAL - END *****/
+
+/***** BANNER - BEGIN *****/
 
 .banner-image {
-    width: 100%;
-    height: auto;
-}
-
-.presentation {
-    background-image: url(img/neige.jpg);
-    min-height: 90vh;
-    border: 50px solid rgb(221, 3, 3);
-    box-sizing: border-box;
-    border-radius: 50% / 10%;
-    width: 100%;
-}
-
-.GO {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 45%;
-        margin-top: 16%;
-        width: 185px;
-        height: 185px;
-        background:#d6a7d2;
-        font:bold 13px Arial;
-        border-radius:50%;
-        border:none;
-        color:#fff;
-}
-                    /* CHOIX REPONSES */
-.questioncontenair {
-  display: flex;
   width: 100%;
-  height: 250px;
-  justify-content: space-around;
-
+  height: auto;
 }
-input[type="radio"] {
-    width: 300px;
-    height: 30px;
-    border-radius: 15px;
-    border: 2px solid hsl(103, 77%, 56%);
-    background-color: hsl(103, 77%, 56%);
-    -webkit-appearance: none; 
-    -moz-appearance: none;
-  }
-  
-  input[type="radio"]:focus { 
-    outline: none; 
-  }
-  
-  input[type="radio"]:checked { 
-    background-color: yellow;
-  }
-    
-  label span:first-of-type {
-    position: relative;
-    font-size: 15px;
-    left: -245px;
-    color: white;
-  }
-  
-  label span {
-    position: relative;
-    top: -12px;
-  }
-                        /* DISSIMULATION DES MAUVAISES/BONNE REPONSES */
-  .rightAnswer {
-    display: none;
-    color: green;
-  }
-  .wrongAnswer {
-    display: none;
-    color: red;
-  }
-  input[type="text"]{
-      color: transparent;
-      text-shadow: 0 0 0 #000;
-      padding: 6px 12px;
-      width: 150px;
-      cursor: pointer;
-  }
-  input[type="text"]:focus{
-      outline: none;
-  }
-  input:checked + .rightAnswer {
-    display: block;
-  }
-  input:checked + .wrongAnswer {
-    display: block;
-  }
-          /* HEADER */
-  
 
-  
-.reims{
-    display: flex;
-    justify-content: center;
+.banner-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;background-image: url(http://cdn.lowgif.com/full/a84f967b419ea240-.gif);
+  background-size: cover;
+  margin: 20px 150px;
+  max-height: 85vh;
+
+  border: 50px solid rgb(221, 3, 3);
+  box-sizing: border-box;
+  border-radius: 50% / 10%;
+}
+
+.banner-text-reims{
+  display: flex;
+  justify-content: center;
 }
 
 .blue{
-    font-size: 200px;
-    background-color: rgb(10, 10, 180);
-    color: white;
-    margin: 20px;
-    transform: rotate(10deg);
+  font-size: 5vw;
+  background-color: rgb(10, 10, 180);
+  color: white;
+  margin: 20px;
 }
 
-.quiz{
-    display: flex;
-    justify-content: center;
+.banner-text-quiz{
+  display: flex;
+  justify-content: center;
 }
 
 .red{
-    font-size: 200px;
-    background-color: rgb(211, 7, 7);
-    color: white;
-    margin: 20px;
+  font-size: 5vw;
+  background-color: rgb(211, 7, 7);
+  color: white;
+  margin: 20px;
 }
 
 .yellow{
-    font-size: 200px;
-    background-color: #E9D107;
-    color: white;
+  font-size: 5vw;
+  background-color: #E9D107;
+  color: white;
 }
 
-h1{
-    display: none;
+.banner-paragraph-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+  height: 20vh;
+  text-align: justify;
 }
+
+.banner-paragraph {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+}
+
+.banner-button {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  height: 20vh;
+}
+
+/***** BANNER - END *****/
+
+/***** BUTTONS - BEGIN *****/
+
+.go-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -2% auto 2% auto;
+  min-width: 10vw;
+  height: auto;
+  background:#d6a7d2;
+  font: bold 13px Arial;
+  border-radius: 50%;
+  border: none;
+  color: #fff;
+  box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
+}
+
+.go-button a, .go-play-button a {
+  text-decoration: none;
+  font-size: 36px;
+  font-weight: 700;
+  color: rgb(10, 10, 180);
+}
+
+.go-button a:hover, .go-button:hover, .go-play-button a:hover, .go-play-button:hover {
+  color: #E9D107;
+  background-color: rgb(211, 7, 7);
+}
+
+/***** BUTTONS - END *****/
+
+/***** PRESENTATION BLOCK - BEGIN *****/
+
+#presentation-block-anchor {
+  padding-top: 85px;
+  margin-top: -85px;
+}
+
+.presentation-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #F5F5F5;
+  background-size: cover;
+  margin: 20px 150px;
+  min-height: 85vh;
+  border: 50px solid rgb(221, 3, 3);
+  box-sizing: border-box;
+  border-radius: 50% / 10%;
+}
+
+.presentation-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 20vh;
+}
+
+.presentation-paragraph {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 70%;
+  height: 20vh;
+  text-align: justify;
+}
+
+.answers-block {
+  width: 90%;
+}
+
+.presentation-text {
+  font-size: 24px;
+
+}
+
+.presentation-button {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  height: 20vh;
+}
+
+.go-play-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -2% auto 2% auto;
+  min-width: 10vw;
+  height: auto;
+  background:#d6a7d2;
+  font: bold 13px Arial;
+  border-radius: 50%;
+  border: none;
+  color: #fff;
+  box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
+}
+
+/***** PRESENTATION BLOCK - END *****/
+
+/***** QUESTIONS BLOCK - BEGIN *****/
+
+#questions-block-anchor {
+  padding-top: 85px;
+  margin-top: -85px;
+}
+
+.questions-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #F5F5F5;
+  background-size: cover;
+  margin: 20px 150px;
+  min-height: 85vh;
+  border: 50px solid rgb(221, 3, 3);
+  box-sizing: border-box;
+  border-radius: 50% / 10%;
+}
+
+.question-quiz {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+
+form {
+  width: 100%;
+}
+
+.question-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+.question-paragraph {
+  display: flex;
+  align-items: flex-start;
+  text-align: justify;
+}
+
+.answer-block {
+  position: relative;
+}
+
+.answer {
+  position: absolute;
+  width: max-content;
+  top: -33px;
+  color: #fff;
+}
+
+
+
+
+
+/* Est ce que l'Id est obligatoire dans l'input du HTML ?? Ou peut on le remplacer par une classe ?? */
+
+input[id="a1Q1"], input[id="a1Q2"], input[id="a1Q3"] {
+  border: 2px solid #f09d28;
+  background-color: #f09d28;
+}
+
+input[id="a2Q1"], input[id="a2Q2"], input[id="a2Q3"] {
+  border: 2px solid #16977f;
+  background-color: #16977f;
+}
+
+input[id="a3Q1"], input[id="a3Q2"], input[id="a3Q3"] {
+  border: 2px solid #150ab4;
+  background-color: #150ab4;
+}
+
+input[id="a4Q1"], input[id="a4Q2"], input[id="a4Q3"] {
+  border: 2px solid #d04d42;
+  background-color: #d04d42;
+}
+
+
+
+input[type="radio"] {
+  width: 100%;
+  height: 70px;
+  border-radius: 15px;
+  -webkit-appearance: none; /*to disable the default appearance of radio button*/
+  -moz-appearance: none;
+}
+
+input[type="radio"]:focus { /*no need, if you don't disable default appearance*/
+  outline: none; /*to remove the square border on focus*/
+}
+
+input[type="radio"]:checked { /*no need, if you don't disable default appearance*/
+  background-color: #1FBED6;
+}
+
+input[type="radio"]:checked ~ span:first-of-type {
+  color: #000;
+  z-index: 9999;
+}
+
+label span:first-of-type {
+  left: 60px;
+  font-size: 21px;
+  font-weight: 600;
+}
+
+/**/
+label span {
+  top: 200px;
+}
+
+.rightAnswer {
+  display: none;
+  color: green;
+}
+.wrongAnswer {
+  display: none;
+  color: red;
+}
+input[type="text"]{
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+    padding: 6px 12px;
+    width: 150px;
+    cursor: pointer;
+}
+input[type="text"]:focus{
+    outline: none;
+}
+input:checked + .rightAnswer {
+  display: block;
+}
+input:checked + .wrongAnswer {
+  display: block;
+}
+
+#reponse1 {
+  display: none;
+}
+input[type="text"]{
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+    padding: 6px 12px;
+    width: 150px;
+    cursor: pointer;
+}
+input[type="text"]:focus{
+    outline: none;
+}
+input:checked + #reponse1 {
+  display: block;
+}
+
+/***** QUESTIONS BLOCK - END *****/
+
+/***** RESPONSIVE - BEGIN *****/
 
 @media screen and (max-width:960px){
 
-  .presentation{
+  .banner-block{
       min-height: 60vh;
       border: 20px solid rgb(221, 3, 3);
       }
@@ -148,9 +385,10 @@ h1{
       font-size: 15vw;
       margin: 5px;
       }
-   
+
   .yellow{
       font-size: 15vw;
       }
-  
 }
+
+/***** RESPONSIVE - END *****/

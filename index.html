@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    	<link rel="stylesheet" type="text/css" href="style.css">
+    	<link rel="stylesheet" type="text/css" href="reims-quiz-test4.css">
 		<title>Wild Code Scool | Reims Quiz</title>
 	</head>
 	<body>
@@ -14,151 +14,194 @@
 			</div>
 		</header>
 
-			<section class="presentation">
-				
-				<p> 
-					<div class="reims">
-						<span class="blue"> R </span>
-						<span class="blue"> E </span>
-						<span class="blue"> I </span>
-						<span class="blue"> M </span>
-						<span class="blue"> S </span>
-						<br>
-					</div>
-		
-					<div class="quiz">
-						<span class="red"> Q </span>
-						<span class="yellow"> U </span>
-						<span class="red"> I </span>
-						<span class="yellow"> Z </span>
-					</div>
-				</p>
-				<div>
-					<h1>Reims Quiz</h1>
-					<p class="presentation-paragraph">
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo odio sequi nemo alias eos unde, voluptas officiis, ut eius, animi omnis quasi doloremque architecto non placeat sit. Ab, dolore ipsum?
-					</p>
-					<button class ="GO" type="button">
-						<a href="#quiz-start">GO</a>
-					</button>
-				</div>
-			</section>
+<!-- Banner Block  -->
+		<section class="banner-block">
+			<div class="banner-text-reims">
+				<span class="blue"> R </span>
+				<span class="blue"> E </span>
+				<span class="blue"> I </span>
+				<span class="blue"> M </span>
+				<span class="blue"> S </span>
+				<br>
+			</div>
+			<div class="banner-text-quiz">
+				<span class="red"> Q </span>
+				<span class="yellow"> U </span>
+				<span class="red"> I </span>
+				<span class="yellow"> Z </span>
+			</div>
+			<div class="banner-paragraph-block">
+				<h1>Reims Quiz</h1>
+					<p class="banner-paragraph">Envie de découvrir ton futur campus ?</p>
+			</div>
+			<div class="banner-button">
+				<button class ="go-button" type="button">
+					<a href="#presentation-block-anchor">GO</a>
+				</button>
+			</div>
+		</section>
 
+<!-- Presentation Block -->
+		<div id="presentation-block-anchor">
+			<span></span>
+		</div>
+		<section class="presentation-block">
+			<div class="presentation-title">
+				<h2>Presentation du Quiz</h2>
+			</div>
+			<div class="presentation-paragraph">
+				<p class=>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus fuga aperiam vel. Modi incidunt odit esse ratione nostrum ducimus qui temporibus quis distinctio suscipit quo perspiciatis, non, recusandae assumenda dolor!</p>
+			</div>
+			<div class="presentation-button">
+				<button class ="go-play-button" type="button">
+					<a href="#questions-block-anchor">JOUER</a>
+				</button>
+			</div>
+		</section>
 
-			<section id="quiz-start">
-				<div class="question-quiz">
-					<h2>Présentation du Quiz</h2>
-					<div class="questions">
-						<form action="#" oninput="score.value=parseInt(answers1.value)+parseInt(answers2.value)+parseInt(answers3.value)|0">
-							<!-- QUESTION 1 -->
-							 <h3>Question 1</h3>
-								 <p>Quel monument de Reims à vu le sacre de plusieurs rois?</p>
-								 <div class="questioncontenair">
-									<label for="a1Q1">
-									 <input type="radio" id="a1Q1" name="answers1" value="0"/>
-							 			<div class="wrongAnswer">
-											<p>Mauvaise réponse !</p>
-										</div>
-							 		<span>La basilique St Remi</span>
-						  		    </label>
-						   			<label for="a2Q1">
-							 		 <input type="radio" id="a2Q1" name="answers1" value="1"/>
-							 			<div class="rightAnswer">
-											<p>Félicitation tu as trouvé la bonne réponse</p>
-											<button><a href="#Q2" target="_blank">Question suivante</a></button>
-											</div>
-									<span>Cathédrale notre Dame de Reims</span>
-						  			</label>
-						   			<label for="a3Q1">
-									 <input type="radio" id="a3Q1" name="answers1" value="0"/>
-							 			<div class="wrongAnswer">
-											<p>Mauvaise réponse !</p>
-										</div>
-									<span>L'église St André</span>
-						   			</label>
-						  			<label for="a4Q1">
-							 		 <input type="radio" id="a4Q1" name="answers1" value="0"/>
-										<div class="wrongAnswer">
-											<p>Mauvaise réponse !</p>
-										</div>
-							 		<span>L'étoile de la Mort</span>
-									   </label>
-							     </div>
-							  <!-- QUESTION 2 -->
-							 <h3 id="Q2">Question 2</h3>
-							 <p>Quels sont les pré-requis pour intégrer la Wild Code School?</p>
-							 <div class="questioncontenair">
-							 <label for="a1Q2">
-								 <input type="radio" id="a1Q2" name="answers2" value="1"/>
-								 	<div class="rightAnswer">
-										 <p>Félicitation tu as trouvé la bonne réponse</p>
-										 <button><a href="#Q3" target="_blank">Question suivante</a></button>
-									 	</div>
-								 <span>Aucun</span>
-							   </label>
-							   <label for="a2Q2">
-								 <input type="radio" id="a2Q2" name="answers2" value="0"/>
-								 <div class="wrongAnswer">
-									<p>Mauvaise réponse !</p>
-								</div>
-								 <span>Savoir coder</span>
-							   </label>
-							   <label for="a3Q2">
-								 <input type="radio" id="a3Q2" name="answers2" value="0"/>
-								 <div class="wrongAnswer">
-									<p>Mauvaise réponse !</p>
-								</div>
-								 <span>Avoir une recommandation d'Alain Chabat</span>
-							   </label>
-							   <label for="a4Q2">
-								 <input type="radio" id="a4Q2" name="answers2" value="0"/>
-								 <div class="wrongAnswer">
-									<p>Mauvaise réponse !</p>
-								</div>
-								 <span>Posséder un ordinateur portable</span>
-							   </label>
-							 </div>
-							  <!-- QUESTION 3  -->								
-							 <h3 id="Q3">Question 3</h3>
-								 <p>Un japonais à construit une chapelle dans Reims, quel est sont nom?</p>
-								 <div class="questioncontenair">
-							   <label for="a1Q3">
-							  	 <input type="radio" id="a1Q3" name="answers3" value="0"/>
-									 <div class="wrongAnswer">
-										<p>Mauvaise réponse !</p>
-									 </div>
-								 <span>La chapelle Tokyo</span>
-							   </label>
-							   <label for="a2Q3">
-								 <input type="radio" id="a2Q3" name="answers3" value="0"/>
-								 	<div class="wrongAnswer">
-										<p>Mauvaise réponse !</p>
-									</div>
-								 <span>La chapelle Son-Goku</span>
-							   </label>
-							   <label for="a3Q3">
-								 <input type="radio" id="a3Q3" name="answers3" value="1"/>
-									 <div class="rightAnswer">
-										<p>Félicitation tu as trouvé la bonne réponse</p>
-										<button><a href="#Q4" target="_blank">Question suivante</a></button>
-									 </div>
-								 <span>La chapelle Foujita</span>
-							   </label>
-							   <label for="a4Q3">
-								 <input type="radio" id="a4Q3" name="answers30" value="0"/>
-									 <div class="wrongAnswer">
-										<p>Mauvaise réponse !</p>
-									 </div>
-								  <span>La chapelle Osaka</span>
-							   </label> 
-							</div>	
-							 <output name="score" for="answers1 answers2 answers3"></output>
-						 </form>
+<!-- Question #1 Block -->
+		<div id="questions-block-anchor">
+			<span></span>
+		</div>
+
+		<form action="#" oninput="score.value=parseInt(answers1.value)+parseInt(answers2.value)+parseInt(answers3.value)|0">
+<!-- QUESTION 1  -->
+<div class="questions-block">
+					<div class="question-title">
+						<h3 id="Q1">Question 1</h3>
 					</div>
-				</div>
-			</section>
-		<footer>
-			<img src="https://raw.githubusercontent.com/cchapleau/reims-quiz/master/img/wcs-footer.png" alt="Footer of the Wild Code School" width="100%" height="auto">
-		</footer>
+					<div class="question-paragraph">
+						<p class="question">Quel monument de Reims à vu le sacre de plusieurs rois ?</p>
+					</div>
+					<div class="answers-block">
+						<label class="answer-block" for="a1Q1">
+							<input type="radio" id="a1Q1" name="answers1" value="0"/>
+							<span class="answer">La basilique St Remi</span>
+								<div class="wrongAnswer">
+								<p>Mauvaise réponse !</p>
+								<button><a href="#Q2">Question suivante</a></button>
+								</div>
+						</label>
+						<label class="answer-block" for="a2Q1">
+							<input type="radio" id="a2Q1" name="answers1" value="1"/>
+							<span class="answer">Cathédrale notre Dame de Reims</span>
+								<div class="rightAnswer">
+									<p>Félicitation tu as trouvé la bonne réponse</p>
+									<button><a href="#Q2">Question suivante</a></button>
+								</div>
+						</label>
+						<label class="answer-block" for="a3Q1">
+							<input type="radio" id="a3Q1" name="answers1" value="0"/>
+							<span class="answer">L'église St André</span>
+								<div class="wrongAnswer">
+									<p>Mauvaise réponse !</p>
+									<button><a href="#Q2">Question suivante</a></button>
+								</div>
+						</label>
+						<label class="answer-block" for="a4Q1">
+							<input type="radio" id="a4Q1" name="answers1" value="0"/>
+							<span class="answer">L'étoile de la Mort</span>
+								<div class="wrongAnswer">
+									<p>Mauvaise réponse !</p>
+									<button><a href="#Q2">Question suivante</a></button>
+								</div>
+						</label>
+					</div>
+</div>
+<!-- QUESTION 2  -->
+<div class="questions-block">
+					<div class="question-title">
+						<h3 id="Q2">Question 2</h3>
+					</div>
+					<div class="question-paragraph">
+						<p class="question">Quels sont les pré-requis pour intégrer la Wild Code School ?</p>
+					</div>
+					<div class="answers-block">
+						<label class="answer-block" for="a1Q2">
+							<input type="radio" id="a1Q2" name="answers1" value="0"/>
+							<span class="answer">Aucun</span>
+								<div class="rightAnswer">
+								<p>Félicitation tu as trouvé la bonne réponse</p>
+								<button><a href="#Q3">Question suivante</a></button>
+								</div>
+						</label>
+						<label class="answer-block" for="a2Q2">
+							<input type="radio" id="a2Q2" name="answers1" value="1"/>
+							<span class="answer">Savoir coder</span>
+								<div class="wrongAnswer">
+									<p>Mauvaise réponse !</p>
+									<button><a href="#Q3">Question suivante</a></button>
+								</div>
+						</label>
+						<label class="answer-block" for="a3Q2">
+							<input type="radio" id="a3Q2" name="answers1" value="0"/>
+							<span class="answer">Posséder un ordinateur portable</span>
+								<div class="wrongAnswer">
+									<p>Mauvaise réponse !</p>
+									<button><a href="#Q3">Question suivante</a></button>
+								</div>
+						</label>
+						<label class="answer-block" for="a4Q2">
+							<input type="radio" id="a4Q2" name="answers1" value="0"/>
+							<span class="answer">Avoir une recommandation d'Alain Chabat</span>
+								<div class="wrongAnswer">
+									<p>Mauvaise réponse !</p>
+									<button><a href="#Q3">Question suivante</a></button>
+								</div>
+						</label>
+					</div>
+</div>
+<!-- QUESTION 3  -->
+<div class="questions-block">
+					<div class="question-title">
+						<h3 id="Q1">Question 3</h3>
+					</div>
+					<div class="question-paragraph">
+						<p class="question">Un japonais à construit une chapelle dans Reims, quel est sont nom ?</p>
+					</div>
+					<div class="answers-block">
+						<label class="answer-block" for="a1Q3">
+							<input type="radio" id="a1Q3" name="answers1" value="0"/>
+							<span class="answer">La chapelle Tokyo</span>
+								<div class="wrongAnswer">
+								<p>Mauvaise réponse !</p>
+								<button><a href="#Q4">Question suivante</a></button>
+								</div>
+						</label>
+						<label class="answer-block" for="a2Q3">
+							<input type="radio" id="a2Q3" name="answers1" value="1"/>
+							<span class="answer">La chapelle Osaka</span>
+								<div class="wrongAnswer">
+									<p>Mauvaise réponse !</p>
+									<button><a href="#Q4">Question suivante</a></button>
+								</div>
+						</label>
+						<label class="answer-block" for="a3Q3">
+							<input type="radio" id="a3Q3" name="answers1" value="0"/>
+							<span class="answer">La chapelle Foujita</span>
+								<div class="rightAnswer">
+									<p>Félicitation tu as trouvé la bonne réponse</p>
+									<button><a href="#Q4">Question suivante</a></button>
+								</div>
+						</label>
+						<label class="answer-block" for="a4Q3">
+							<input type="radio" id="a4Q3" name="answers1" value="0"/>
+							<span class="answer">La chapelle Son-Goku</span>
+								<div class="wrongAnswer">
+									<p>Mauvaise réponse !</p>
+									<button><a href="#Q4">Question suivante</a></button>
+								</div>
+						</label>
+					</div>
+</div>
+					<div>
+					<output name="score"></output>
+					</div>
+				</form>
+
+	<footer>
+		<img src="https://raw.githubusercontent.com/cchapleau/reims-quiz/master/img/wcs-footer.png" alt="Footer of the Wild Code School" width="100%" height="auto">
+	</footer>
+
 	</body>
 </html>
