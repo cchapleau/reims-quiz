@@ -7,6 +7,9 @@
 
 .top-banner {
   height: 12vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 body {
@@ -19,7 +22,6 @@ header {
   color: #fff;
   font-size: 3vw;
   text-align: center;
-  height: 8vh;
   font-family:ArchitectsDaughter-Regular;
   font-weight: bold;
   text-shadow: white 0.1em 0.1em 0.2em;
@@ -31,12 +33,11 @@ header {
 
 .production{
   color: #E9D107;
+  margin: 0% 1%;
 }
 
 .presente{
   color: rgb(221, 3, 3);
-  height: 16vh;
-  padding: 2%;
 }
 
 h1 {
@@ -247,8 +248,8 @@ footer {
 /***** QUESTIONS BLOCK - BEGIN *****/
 
 #questions-block-anchor {
-  padding-top: 12vh;
-  margin-bottom: -12vh;
+  padding-top: 16vh;
+  margin-bottom: -16vh;
 }
 
 .questions-block {
@@ -681,7 +682,3 @@ output {
   justify-content: center;
   color: lightgoldenrodyellow;
 }
-
-
-
-
