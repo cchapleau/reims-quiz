@@ -1,4 +1,9 @@
 /***** GENERAL - BEGIN *****/
+@font-face{
+  font-family:'ArchitectsDaughter-Regular';
+  src: url('ArchitectsDaughter-Regular.ttf')
+  format('truetype');
+}
 
 .top-banner {
   height: 12vh;
@@ -14,6 +19,22 @@ header {
   color: #fff;
   font-size: 3vw;
   text-align: center;
+  height: 8vh;
+  font-family:ArchitectsDaughter-Regular;
+  font-weight: bold;
+  text-shadow: white 0.1em 0.1em 0.2em;
+}
+
+.horizon{
+  color: #2b1fd1;
+}
+
+.production{
+  color: #E9D107;
+}
+
+.presente{
+  color: rgb(221, 3, 3);
   height: 16vh;
   padding: 2%;
 }
@@ -70,7 +91,7 @@ footer {
 
 .blue{
   font-size: 5vw;
-  background-color: rgb(10, 10, 180);
+  background-color:  #2b1fd1;
   color: white;
   margin: 20px;
 }
@@ -490,9 +511,7 @@ html, body {
   width: 150%;
   height: 100%;
 }
-<<<<<<< HEAD
 
-=======
 /*.popuptext {
   display: flex;
   flex-direction: column;
@@ -501,7 +520,6 @@ html, body {
   height: 100%;
   padding: 4rem;
 }*/
->>>>>>> b72620848a8586c7ace58f43bb3c1baa803c462b
 .popuptext p {
   font-size: 24px;
   color: white;
@@ -615,10 +633,11 @@ html, body {
 }*/
 
 .wrong-popuptext p {
-  font-size: 24px;
+  font-size: 1.2vh;
   color: white;
   font-weight: bold;
   line-height: 1.5;
+  word-wrap: break-word;
 }
 
 
@@ -652,8 +671,6 @@ html, body {
   cursor: pointer;
   text-decoration: none;
 }
-<<<<<<< HEAD
-=======
 
 /* scoring */
 
@@ -668,4 +685,3 @@ output {
 
 
 
->>>>>>> b72620848a8586c7ace58f43bb3c1baa803c462b
