@@ -32,39 +32,6 @@ footer {
 /***** BANNER - BEGIN *****/
 
 .banner-image {
-<<<<<<< HEAD
-    width: 100%;
-    height: auto;
-}
-
-.presentation {
-    background-image: url(img/neige.jpg);
-    min-height: 90vh;
-    border: 50px solid rgb(221, 3, 3);
-    box-sizing: border-box;
-    border-radius: 50% / 10%;
-    width: 100%;
-}
-
-.GO {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 45%;
-        margin-top: 16%;
-        width: 185px;
-        height: 185px;
-        background:#d6a7d2;
-        font:bold 13px Arial;
-        border-radius:50%;
-        border:none;
-        color:#fff;
-}
-                    /* CHOIX REPONSES */
-.questionContenair {
-  display: flex;
-=======
->>>>>>> 5ffc63b6819d33b77cba846999fd7e39020da21b
   width: 100%;
   height: auto;
 }
@@ -439,18 +406,12 @@ input:checked + #reponse1 {
   .yellow{
       font-size: 15vw;
       }
-<<<<<<< HEAD
-  
-}
-/* test popup */ 
-=======
 }
 
 /***** RESPONSIVE - END *****/
 
 
 /* popup good Answer */
->>>>>>> 5ffc63b6819d33b77cba846999fd7e39020da21b
 
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600&subset=latin-ext");
 * {
@@ -467,9 +428,6 @@ html, body {
     font-size: 12px;
   }
 }
-<<<<<<< HEAD
-.container {
-=======
 /*.goodAnswerQ1 {
   display: none;
 }
@@ -479,16 +437,11 @@ input:checked + .goodAnswerQ1 {
   }*/
 
 /*.container {
->>>>>>> 5ffc63b6819d33b77cba846999fd7e39020da21b
   background-color: #47BDFF;
   display: flex;
   align-items: center;
   justify-content: center;
-<<<<<<< HEAD
-}
-=======
 }*/
->>>>>>> 5ffc63b6819d33b77cba846999fd7e39020da21b
  
 /*.button {
   text-decoration: none;
@@ -532,11 +485,8 @@ input:checked + .goodAnswerQ1 {
   transform: rotate(32deg);
   transition: .64s ease-in-out;
 }
-<<<<<<< HEAD
-=======
 
 
->>>>>>> 5ffc63b6819d33b77cba846999fd7e39020da21b
 .popupphoto {
   display: flex;
   justify-content: flex-end;
@@ -557,18 +507,10 @@ input:checked + .goodAnswerQ1 {
   height: 100%;
   padding: 4rem;
 }*/
-<<<<<<< HEAD
-=======
-
->>>>>>> 5ffc63b6819d33b77cba846999fd7e39020da21b
 .popuptext p {
   font-size: 24px;
   color: white;
   font-weight: bold;
-<<<<<<< HEAD
-  font-style: ;
-=======
->>>>>>> 5ffc63b6819d33b77cba846999fd7e39020da21b
   line-height: 1.5;
 }
  
@@ -601,9 +543,6 @@ input:checked + .goodAnswerQ1 {
   text-align: center;
   cursor: pointer;
   text-decoration: none;
-<<<<<<< HEAD
-}
-=======
 }
 
 
@@ -745,7 +684,16 @@ input:checked + .goodAnswerQ1 {
   text-decoration: none;
 }
 
+/* scoring */
+
+output {
+  display: flex;
+  font-size: 10vw;
+  margin: 6vw;
+  justify-content: center;
+  color: lightgoldenrodyellow;
+}
 
 
 
->>>>>>> 5ffc63b6819d33b77cba846999fd7e39020da21b
+
