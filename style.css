@@ -701,3 +701,15 @@ output {
 
 
 
+/* FOOTER*/
+
+footer {
+  text-align:center;
+  background-color: #d04d42;
+  color:white;
+  height: 200px;
+}
+
+.footertitle {
+  font-size: 20px;
+}
