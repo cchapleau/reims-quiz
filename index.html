@@ -66,10 +66,14 @@
 		<div id="questions-block-anchor">
 			<span></span>
 		</div>
+<<<<<<< HEAD
 		<div>
 			<div class="top-banner">HORIZON PRODUCTION PRESENTE</div>
 		</div>
 		<form action="#" oninput="score.value=parseInt(answers1.value)+parseInt(answers2.value)+parseInt(answers3.value)|0">
+=======
+		<form action="#" oninput="score.value=parseInt(answer1.value || 0)+parseInt(answer2.value || 0)parseInt(answer3.value || 0">
+>>>>>>> b72620848a8586c7ace58f43bb3c1baa803c462b
 <!-- QUESTION 1  -->
 <div class="questions-block">
 					<div class="question-title">
@@ -293,7 +297,7 @@
 					</div>
 </div>
 					<div>
-					<output name="score"></output>
+					<p>Votre score est de :<output name="score">0</output>/20</p>
 					</div>
 				</form>
 	<footer>

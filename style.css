@@ -490,7 +490,18 @@ html, body {
   width: 150%;
   height: 100%;
 }
+<<<<<<< HEAD
 
+=======
+/*.popuptext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  height: 100%;
+  padding: 4rem;
+}*/
+>>>>>>> b72620848a8586c7ace58f43bb3c1baa803c462b
 .popuptext p {
   font-size: 24px;
   color: white;
@@ -641,3 +652,20 @@ html, body {
   cursor: pointer;
   text-decoration: none;
 }
+<<<<<<< HEAD
+=======
+
+/* scoring */
+
+output {
+  display: flex;
+  font-size: 10vw;
+  margin: 6vw;
+  justify-content: center;
+  color: lightgoldenrodyellow;
+}
+
+
+
+
+>>>>>>> b72620848a8586c7ace58f43bb3c1baa803c462b
