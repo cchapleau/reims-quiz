@@ -1,4 +1,9 @@
 /***** GENERAL - BEGIN *****/
+@font-face{
+  font-family:'ArchitectsDaughter-Regular';
+  src: url('ArchitectsDaughter-Regular.ttf')
+  format('truetype');
+}
 
 body {
   margin: 0 auto;
@@ -11,7 +16,21 @@ header {
   font-size: 3vw;
   text-align: center;
   height: 8vh;
-  
+  font-family:ArchitectsDaughter-Regular;
+  font-weight: bold;
+  text-shadow: white 0.1em 0.1em 0.2em;
+}
+
+.horizon{
+  color: #2b1fd1;
+}
+
+.production{
+  color: #E9D107;
+}
+
+.presente{
+  color: rgb(221, 3, 3);
 }
 
 h1 {
@@ -60,7 +79,7 @@ footer {
 
 .blue{
   font-size: 5vw;
-  background-color: rgb(10, 10, 180);
+  background-color:  #2b1fd1;
   color: white;
   margin: 20px;
 }
@@ -651,10 +670,11 @@ input:checked + .goodAnswerQ1 {
 }*/
 
 .wrong-popuptext p {
-  font-size: 24px;
+  font-size: 1.2vh;
   color: white;
   font-weight: bold;
   line-height: 1.5;
+  word-wrap: break-word;
 }
 
 
