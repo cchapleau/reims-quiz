@@ -1,5 +1,9 @@
 /***** GENERAL - BEGIN *****/
 
+.top-banner {
+  height: 12vh;
+}
+
 body {
   margin: 0 auto;
   cursor: default;
@@ -10,8 +14,8 @@ header {
   color: #fff;
   font-size: 3vw;
   text-align: center;
-  height: 8vh;
-  
+  height: 16vh;
+  padding: 2%;
 }
 
 h1 {
@@ -20,6 +24,11 @@ h1 {
 
 h2 {
   text-align: center;
+  font-size: 3vw;
+}
+
+h3 {
+  font-size: 3vw;
 }
 
 .next-question {
@@ -43,12 +52,13 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;background-image: url(http://cdn.lowgif.com/full/a84f967b419ea240-.gif);
+  align-items: center;
+  background-image: url(http://cdn.lowgif.com/full/a84f967b419ea240-.gif);
   background-size: cover;
-  margin: 1.2vw 5vw ;
-  max-height: 85vh;
-
-  border: 50px solid rgb(221, 3, 3);
+  width: 90%;
+  margin: 1.2vh 5vw 1.4vh 5vw ;
+  height: 80vh;
+  border: 2vw solid rgb(221, 3, 3);
   box-sizing: border-box;
   border-radius: 50% / 10%;
 }
@@ -142,8 +152,8 @@ footer {
 /***** PRESENTATION BLOCK - BEGIN *****/
 
 #presentation-block-anchor {
-  padding-top: 85px;
-  margin-top: -85px;
+  padding-top: 16vh;
+  margin-bottom: -16vh;
 }
 
 .presentation-block {
@@ -153,9 +163,10 @@ footer {
   align-items: center;
   background-color: #F5F5F5;
   background-size: cover;
-  margin: 20px 150px;
-  min-height: 85vh;
-  border: 50px solid rgb(221, 3, 3);
+  width: 90%;
+  margin: 1.2vh 5vw 1.4vh 5vw ;
+  height: 80vh;
+  border: 2vw solid rgb(221, 3, 3);
   box-sizing: border-box;
   border-radius: 50% / 10%;
 }
@@ -175,6 +186,8 @@ footer {
   width: 70%;
   height: 20vh;
   text-align: justify;
+  font-size: 1.5vw;
+  line-height: 40px;
 }
 
 .answers-block {
@@ -213,8 +226,8 @@ footer {
 /***** QUESTIONS BLOCK - BEGIN *****/
 
 #questions-block-anchor {
-  padding-top: 85px;
-  margin-top: -85px;
+  padding-top: 12vh;
+  margin-bottom: -12vh;
 }
 
 .questions-block {
@@ -224,9 +237,10 @@ footer {
   align-items: center;
   background-color: #F5F5F5;
   background-size: cover;
-  margin: 20px 150px;
+  width: 60%;
+  margin: 1.2vw 5vw ;
   min-height: 85vh;
-  border: 50px solid rgb(221, 3, 3);
+  border: 2vw solid rgb(221, 3, 3);
   box-sizing: border-box;
   border-radius: 50% / 10%;
 }
@@ -431,32 +445,6 @@ html, body {
     font-size: 12px;
   }
 }
-/*.goodAnswerQ1 {
-  display: none;
-}
-
-input:checked + .goodAnswerQ1 {
-  display: block;
-  }*/
-
-/*.container {
-  background-color: #47BDFF;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}*/
-
-/*.button {
-  text-decoration: none;
-  font-size: .875rem;
-  text-transform: uppercase;
-  display: inline-block;
-  border-radius: 1.5rem;
-  background-color: #fff;
-  color: #47BDFF;
-  padding: 1rem 2rem;
-  font-weight: 900;
-}*/
 
 .popup {
   display: flex;
@@ -502,14 +490,6 @@ input:checked + .goodAnswerQ1 {
   width: 150%;
   height: 100%;
 }
-/*.popuptext {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 60%;
-  height: 100%;
-  padding: 4rem;
-}*/
 
 .popuptext p {
   font-size: 24px;
@@ -563,41 +543,11 @@ html, body {
   font-size: 16px;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 77a9dc0785f12d17752e70f0647a58824d1b532d
 @media screen and (max-width: 768px) {
   html, body {
     font-size: 12px;
   }
 }
-/*.goodAnswerQ1 {
-  display: none;
-}
-
-input:checked + .goodAnswerQ1 {
-  display: block;
-  }*/
-
-/*.container {
-  background-color: #47BDFF;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}*/
-
-/*.button {
-  text-decoration: none;
-  font-size: .875rem;
-  text-transform: uppercase;
-  display: inline-block;
-  border-radius: 1.5rem;
-  background-color: #fff;
-  color: #47BDFF;
-  padding: 1rem 2rem;
-  font-weight: 900;
-}*/
 
 .wrong-popup {
   display: flex;
@@ -608,7 +558,7 @@ input:checked + .goodAnswerQ1 {
   height: 100vh;
   bottom: 0;
   right: 0;
-  background-color: 0;
+  /* background-color: #000; */
   z-index: 2;
   visibility: hidden;
   opacity: 0;
