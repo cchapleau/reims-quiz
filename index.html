@@ -63,7 +63,7 @@
 		<div id="questions-block-anchor">
 			<span></span>
 		</div>
-		<form action="#" oninput="score.value=parseInt(answers1.value)+parseInt(answers2.value)+parseInt(answers3.value)|0">
+		<form action="#" oninput="score.value=parseInt(answers1.value ||0)+parseInt(answers2.value ||0)+parseInt(answers3.value ||0)">
 <!-- QUESTION 1  -->
 <div class="questions-block">
 					<div class="question-title">
@@ -284,7 +284,7 @@
 					</div>
 </div>
 					<div>
-					<output name="score"></output>
+					<p>Votre score est de :<output name="score">0</output>/20</p>
 					</div>
 				</form>
 	<footer>
