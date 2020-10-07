@@ -315,6 +315,7 @@ form {
 input[id="a1Q1"], input[id="a1Q2"], input[id="a1Q3"] {
   border: 2px solid #f09d28;
   background-color: #f09d28;
+  width: 100%;
 }
 
 input[id="a2Q1"], input[id="a2Q2"], input[id="a2Q3"] {
@@ -663,12 +664,107 @@ html, body {
   background-repeat: no-repeat;
 }
 
+.container-question1 {
+  background-image: url(https://raw.githubusercontent.com/cchapleau/reims-quiz/b6dd4f4c7b759a31976770d049306032375355fa/img/television3.svg);
+  display: flex;
+  background-repeat: no-repeat;
+}
+
 .scoring-block {
-  background-color: #1d1b1b;
+  /* background-color: #1d1b1b; */
   color: #F5F5F5;
   width: 30%;
   background-size: cover;
   height: auto;
+}
+
+.scoring-block-sticky {
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  height: 80vh;
+  top: 36vh;
+  margin-bottom: -80vh;
+  width: 98%;
+}
+
+
+/* .scoring-image {
+  background-image: url(https://raw.githubusercontent.com/cchapleau/Merge-and-conflits/master/Scoring-test2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+} */
+
+output#score {
+    margin-top: -59vh;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.box1 {
+  width: 70%;
+}
+
+.next-question-button {
+  display: flex;
+  justify-content: center;
+  padding-top: 5vh;
+  margin-bottom: -5vh;
+}
+
+.next-question-button a {
+  text-decoration: none;
+  font-size: 36px;
+  font-weight: 700;
+  color: rgb(10, 10, 180);
+}
+
+.next-question-button button:hover, .next-question-button button a:hover {
+  color: #E9D107;
+  background-color: rgb(211, 7, 7);
+  border: 2px solid rgb(211, 7, 7);
+}
+
+.next-question-button button {
+  background-color: #d6a7d2;
+  border: 2px solid #d6a7d2;
+  height: 9vh;
+  width: max-content;
+  margin-top: -20vh;
+  padding: 15px;
+}
+
+
+.scoring-image {
+  width: 30%;
+}
+.scoring-image img {
+  width: 95%;
+  height: auto;
+}
+
+.score-test {
+  height: 80vh;
+}
+
+.container-question1 {
+  margin-top: -20vh;
+}
+
+.scoring-image span {
+  z-index: 99;
+}
+
+
+
+.scoring-image p {
+  /* background-image: url(https://raw.githubusercontent.com/cchapleau/Merge-and-conflits/master/score-box-test2.png); */
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 
