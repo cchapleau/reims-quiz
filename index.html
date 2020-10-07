@@ -15,6 +15,7 @@
 		</header>
 
 <!-- Banner Block  -->
+<div class="container-banner"> <!-- test -->
 		<section class="banner-block">
 			<div class="banner-text-reims">
 				<span class="blue"> R </span>
@@ -35,11 +36,12 @@
 					<p class="banner-paragraph">Envie de découvrir ton futur campus ?</p>
 			</div>
 			<div class="banner-button">
-				<button class ="go-button" type="button">
+				<div class ="go-button">
 					<a href="#presentation-block-anchor">GO</a>
-				</button>
+				</div>
 			</div>
 		</section>
+</div>
 
 <!-- Presentation Block -->
 		<div id="presentation-block-anchor">
@@ -53,12 +55,12 @@
 				<h2>Presentation du Quiz</h2>
 			</div>
 			<div class="presentation-paragraph">
-				<p class=>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus fuga aperiam vel. Modi incidunt odit esse ratione nostrum ducimus qui temporibus quis distinctio suscipit quo perspiciatis, non, recusandae assumenda dolor!</p>
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus fuga aperiam vel. Modi incidunt odit esse ratione nostrum ducimus qui temporibus quis distinctio suscipit quo perspiciatis, non, recusandae assumenda dolor!</p>
 			</div>
 			<div class="presentation-button">
-				<button class ="go-play-button" type="button">
+				<div class ="go-play-button">
 					<a href="#questions-block-anchor">JOUER</a>
-				</button>
+				</div>
 			</div>
 		</section>
 
@@ -70,16 +72,27 @@
 		<div>
 			<div class="top-banner">HORIZON PRODUCTION PRESENTE</div>
 		</div>
+<<<<<<< HEAD
 		<form action="#" oninput="score.value=parseInt(answers1.value)+parseInt(answers2.value)+parseInt(answers3.value)|0">
 =======
 
 <!-- QUESTION 1  -->
+=======
+		
+<!-- QUESTION 1  -->
+		<div id="questions-block-anchor">
+			<span></span>
+		</div>
+		<form action="#" oninput="score.value=parseInt(answers1.value || 0)+parseInt(answers2.value || 0)+parseInt(answers3.value || 0)">
+<!-- QUESTION 1  -->
+<div class="container-questions">
+>>>>>>> 7f938f048b69aaf9f06eb8281bd547fc557ac401
 <div class="questions-block">
 					<div class="question-title">
 						<h3 id="Q1">Question 1</h3>
 					</div>
 					<div class="question-paragraph">
-						<p class="question">Quel monument de Reims à vu le sacre de plusieurs rois ?</p>
+						<span class="question">Quel monument de Reims à vu le sacre de plusieurs rois ?</span>
 					</div>
 					<div class="answers-block">
 						<label class="answer-block" for="a1Q1">
@@ -93,7 +106,7 @@
 								  <div class="wrong-popuptext">
 									<p>Mauvaise réponse... <br>C'était la cathédrale de Reims : <br>
 									Entre 1027 et 1825, il y a 31 rois qui ont été sacré à Reims, dont entre autres François 1er et Louis XIV.<br>
-									<a class="nxtQestion" href=#Q2>Question suivante !</a></p>
+									<a class="nxtQestion" href=#question2-block-anchor>Question suivante !</a></p>
 								  </div>
 							  </div>
 							</div>
@@ -110,7 +123,7 @@
 									<h1>Félicitation tu as trouvé la bonne réponse !</h1>
 									<p>La cathédrale de Reims : <br>
 									Entre 1027 et 1825, il y a 31 rois qui ont été sacré à Reims, dont entre autres François 1er et Louis XIV.<br>
-									<a class="nxtQestion" href=#Q2>Question suivante !</a></p>
+									<a class="nxtQestion" href=#question2-block-anchor>Question suivante !</a></p>
 								  </div>
 							  </div>
 							</div>
@@ -126,7 +139,7 @@
 								  <div class="wrong-popuptext">
 									<p>Mauvaise réponse... <br>C'était la cathédrale de Reims : <br>
 									Entre 1027 et 1825, il y a 31 rois qui ont été sacré à Reims, dont entre autres François 1er et Louis XIV.<br>
-									<a class="nxtQestion" href=#Q2>Question suivante !</a></p>
+									<a class="nxtQestion" href=#question2-block-anchor>Question suivante !</a></p>
 								  </div>
 							  </div>
 							</div>
@@ -149,10 +162,22 @@
 						</label>
 					</div>
 </div>
+<div class="scoring-block">
+	<span>test</span>
+</div>
+</div>
+
 <!-- QUESTION 2  -->
 <div>
 	<div class="top-banner"></div>
 </div>
+<<<<<<< HEAD
+=======
+<div id="question2-block-anchor">
+	<span></span>
+</div>
+<div class="container-questions">
+>>>>>>> 7f938f048b69aaf9f06eb8281bd547fc557ac401
 <div class="questions-block">
 					<div class="question-title">
 						<h3 id="Q2">Question 2</h3>
@@ -162,7 +187,7 @@
 					</div>
 					<div class="answers-block">
 						<label class="answer-block" for="a1Q2">
-							<input type="radio" id="a1Q2" name="answers1" value="1"/>
+							<input type="radio" id="a1Q2" name="answers2" value="1"/>
 							<a class="answer" href="#a1Q2popup"><span>Aucun</span></a>
 							<div class="popup" id="a1Q2popup">
 								<div class="popup-inner">
@@ -172,7 +197,7 @@
 								  <div class="popuptext">
 									<h1>Félicitation tu as trouvé la bonne réponse !</h1>
 									<p>La Wild Code School ne requiert aucun pré-requis!<br>
-									<a class="nxtQestion" href=#Q3>Question suivante !</a></p>
+									<a class="nxtQestion" href=#question3-block-anchor>Question suivante !</a></p>
 								  </div>
 							  </div>
 							</div>
@@ -187,10 +212,11 @@
 								  </div>
 								  <div class="wrong-popuptext">
 									<p>Mauvaise réponse... <br>La réponse était Aucun !
-									<a class="nxtQestion" href=#Q3>Question suivante !</a></p>
+									<a class="nxtQestion" href=#question3-block-anchor>Question suivante !</a></p>
 								  </div>
 							  </div>
 							</div>
+						</label>	
 							<label class="answer-block" for="a3Q2">
 								<input type="radio" id="a3Q2" name="answers2" value="0"/>
 								<a class="answer" href="#a3Q2popup"><span>Posséder un ordinateur portable</span></a>
@@ -201,7 +227,7 @@
 									  </div>
 									  <div class="wrong-popuptext">
 										<p>Mauvaise réponse... <br>La réponse était Aucun !
-										<a class="nxtQestion" href=#Q3>Question suivante !</a></p>
+										<a class="nxtQestion" href=#question3-block-anchor>Question suivante !</a></p>
 									  </div>
 								  </div>
 								</div>
@@ -216,14 +242,25 @@
 									  </div>
 									  <div class="wrong-popuptext">
 										<p>Mauvaise réponse... <br>La réponse était Aucun !
-										<a class="nxtQestion" href=#Q3>Question suivante !</a></p>
+										<a class="nxtQestion" href=#question3-block-anchor>Question suivante !</a></p>
 									  </div>
 								  </div>
 								</div>
 							</label>
 					</div>
 </div>
+<div class="scoring-block">
+	<span>test</span>
+</div>
+</div>
 <!-- QUESTION 3  -->
+<div>
+	<div class="top-banner"></div>
+</div>
+<div id="question3-block-anchor">
+	<span></span>
+</div>
+<div class="container-questions">
 <div class="questions-block">
 					<div class="question-title">
 						<h3 id="Q3">Question 3</h3>
@@ -295,11 +332,16 @@
 						</label>
 					</div>
 </div>
+<div class="scoring-block">
+	<span>test</span>
+</div>
+</div>
 					<div>
-					<p>Votre score est de :<output name="score">0</output>/20</p>
+					<p>Votre score est de :<output id="score" name="score">0</output></p>
 					</div>
-				</form>
+				</form>		
 	<footer>
+
 	<p class=footertitle> Merci d'avoir répondu à toutes les questions, c'était un quiz créé par :</p>
 	<p><a href="https://www.linkedin.com/in/bruno-lagasse-8a699716a/">Bruno Lagasse</a></p>
 	<p><a href="https://www.linkedin.com/in/damien-lambert-98b2b01b8/">Damien Lambert</a></p>
@@ -314,6 +356,7 @@
 	<img class=reimsfooter src=img/Reimsfooter.jpg alt= "imgReims">
 
 	</div>
+
 	</footer>
 
 	</body>
