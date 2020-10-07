@@ -40,7 +40,6 @@
 				</button>
 			</div>
 		</section>
-
 <!-- Presentation Block -->
 		<div id="presentation-block-anchor">
 			<span></span>
@@ -63,7 +62,7 @@
 		<div id="questions-block-anchor">
 			<span></span>
 		</div>
-		<form action="#" oninput="score.value=parseInt(answer1.value || 0)+parseInt(answer2.value || 0)parseInt(answer3.value || 0">
+		<form action="#" oninput="score.value=parseInt(answers1.value || 0)+parseInt(answers2.value || 0)+parseInt(answers3.value || 0)">
 <!-- QUESTION 1  -->
 <div class="questions-block">
 					<div class="question-title">
@@ -150,7 +149,7 @@
 					</div>
 					<div class="answers-block">
 						<label class="answer-block" for="a1Q2">
-							<input type="radio" id="a1Q2" name="answers1" value="1"/>
+							<input type="radio" id="a1Q2" name="answers2" value="1"/>
 							<a class="answer" href="#a1Q2popup"><span>Aucun</span></a>
 							<div class="popup" id="a1Q2popup">
 								<div class="popup-inner"> 
@@ -284,9 +283,9 @@
 					</div>
 </div>
 					<div>
-					<p>Votre score est de :<output name="score">0</output>/20</p>
+					<p>Votre score est de :<output id="score"name="score">0</output></p>
 					</div>
-				</form>
+				</form>		
 	<footer>
 		<img src="https://raw.githubusercontent.com/cchapleau/reims-quiz/master/img/wcs-footer.png" alt="Footer of the Wild Code School" width="100%" height="auto">
 	</footer>
