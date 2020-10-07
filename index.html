@@ -10,11 +10,16 @@
 
 		<header>
 			<div>
-				<p>HORIZON PRODUCTION PRESENTE </p>
+				<div class="top-banner">
+					<span class="horizon">HORIZON</span>
+					<span class="production">PRODUCTION</span>
+					<span class="presente">PRESENTE</span>
+				</div>
 			</div>
 		</header>
 
 <!-- Banner Block  -->
+<div class="container-banner"> <!-- test -->
 		<section class="banner-block">
 			<div class="banner-text-reims">
 				<span class="blue"> R </span>
@@ -35,14 +40,19 @@
 					<p class="banner-paragraph">Envie de découvrir ton futur campus ?</p>
 			</div>
 			<div class="banner-button">
-				<button class ="go-button" type="button">
+				<div class ="go-button">
 					<a href="#presentation-block-anchor">GO</a>
-				</button>
+				</div>
 			</div>
 		</section>
+</div>
+
 <!-- Presentation Block -->
 		<div id="presentation-block-anchor">
 			<span></span>
+		</div>
+		<div>
+			<div class="top-banner"></div>
 		</div>
 		<section class="presentation-block">
 			<div class="presentation-title">
@@ -52,38 +62,44 @@
 				<p class=>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus fuga aperiam vel. Modi incidunt odit esse ratione nostrum ducimus qui temporibus quis distinctio suscipit quo perspiciatis, non, recusandae assumenda dolor!</p>
 			</div>
 			<div class="presentation-button">
-				<button class ="go-play-button" type="button">
+				<div class ="go-play-button">
 					<a href="#questions-block-anchor">JOUER</a>
-				</button>
+				</div>
 			</div>
 		</section>
 
 <!-- Question #1 Block -->
+		<div>
+			<div class="top-banner"></div>
+		</div>
+		<form action="#" oninput="score.value=parseInt(answers1.value)+parseInt(answers2.value)+parseInt(answers3.value)|0">
+<!-- QUESTION 1  -->
 		<div id="questions-block-anchor">
 			<span></span>
 		</div>
 		<form action="#" oninput="score.value=parseInt(answers1.value || 0)+parseInt(answers2.value || 0)+parseInt(answers3.value || 0)">
 <!-- QUESTION 1  -->
+<div class="container-questions">
 <div class="questions-block">
 					<div class="question-title">
 						<h3 id="Q1">Question 1</h3>
 					</div>
 					<div class="question-paragraph">
-						<p class="question">Quel monument de Reims à vu le sacre de plusieurs rois ?</p>
+						<span class="question">Quel monument de Reims à vu le sacre de plusieurs rois ?</span>
 					</div>
 					<div class="answers-block">
 						<label class="answer-block" for="a1Q1">
 							<input type="radio" id="a1Q1" name="answers1" value="0"/>
 							<a class="answer" href="#a1Q1popup"><span>La basilique St Remi</span></a>
 							<div class="wrong-popup" id="a1Q1popup">
-								<div class="wrong-popup-inner"> 
+								<div class="wrong-popup-inner">
 								  <div class="wrong-popupphoto">
 									<img src="https://media.giphy.com/media/1QhmDy91F9veMRLpvK/giphy.gif" alt="wrong answer">
 								  </div>
 								  <div class="wrong-popuptext">
 									<p>Mauvaise réponse... <br>C'était la cathédrale de Reims : <br>
 									Entre 1027 et 1825, il y a 31 rois qui ont été sacré à Reims, dont entre autres François 1er et Louis XIV.<br>
-									<a class="nxtQestion" href=#Q2>Question suivante !</a></p>
+									<a class="nxtQestion" href=#question2-block-anchor>Question suivante !</a></p>
 								  </div>
 							  </div>
 							</div>
@@ -92,7 +108,7 @@
 							<input type="radio" id="a2Q1" name="answers1" value="1"/>
 							<a class="answer" href="#a2Q1popup"><span>Cathédrale notre Dame de Reims</span></a>
 							<div class="popup" id="a2Q1popup">
-								<div class="popup-inner"> 
+								<div class="popup-inner">
 								  <div class="popupphoto">
 									<img src="https://media.giphy.com/media/rmi45iyhIPuRG/giphy.gif" alt="good answer">
 								  </div>
@@ -100,7 +116,7 @@
 									<h1>Félicitation tu as trouvé la bonne réponse !</h1>
 									<p>La cathédrale de Reims : <br>
 									Entre 1027 et 1825, il y a 31 rois qui ont été sacré à Reims, dont entre autres François 1er et Louis XIV.<br>
-									<a class="nxtQestion" href=#Q2>Question suivante !</a></p>
+									<a class="nxtQestion" href=#question2-block-anchor>Question suivante !</a></p>
 								  </div>
 							  </div>
 							</div>
@@ -109,14 +125,14 @@
 							<input type="radio" id="a3Q1" name="answers1" value="0"/>
 							<a class="answer" href="#a3Q1popup"><span>L'église St André</span></a>
 							<div class="wrong-popup" id="a3Q1popup">
-								<div class="wrong-popup-inner"> 
+								<div class="wrong-popup-inner">
 								  <div class="wrong-popupphoto">
 									<img src="https://media.giphy.com/media/1QhmDy91F9veMRLpvK/giphy.gif" alt="wrong answer">
 								  </div>
 								  <div class="wrong-popuptext">
 									<p>Mauvaise réponse... <br>C'était la cathédrale de Reims : <br>
 									Entre 1027 et 1825, il y a 31 rois qui ont été sacré à Reims, dont entre autres François 1er et Louis XIV.<br>
-									<a class="nxtQestion" href=#Q2>Question suivante !</a></p>
+									<a class="nxtQestion" href=#question2-block-anchor>Question suivante !</a></p>
 								  </div>
 							  </div>
 							</div>
@@ -125,21 +141,33 @@
 							<input type="radio" id="a4Q1" name="answers1" value="0"/>
 							<a class="answer" href="#a4Q1popup"><span>L'étoile de la mort</span></a>
 							<div class="wrong-popup" id="a4Q1popup">
-								<div class="wrong-popup-inner"> 
+								<div class="wrong-popup-inner">
 								  <div class="wrong-popupphoto">
 									<img src="https://media.giphy.com/media/1QhmDy91F9veMRLpvK/giphy.gif" alt="wrong answer">
 								  </div>
 								  <div class="wrong-popuptext">
 									<p>Mauvaise réponse... <br>C'était la cathédrale de Reims : <br>
 									Entre 1027 et 1825, il y a 31 rois qui ont été sacré à Reims, dont entre autres François 1er et Louis XIV.<br>
-									<a class="nxtQestion" href=#Q2>Question suivante !</a></p>
+									<a class="nxtQestion" href=#question2-block-anchor>Question suivante !</a></p>
 								  </div>
 							  </div>
 							</div>
 						</label>
 					</div>
 </div>
+<div class="scoring-block">
+	<span>test</span>
+</div>
+</div>
+
 <!-- QUESTION 2  -->
+<div>
+	<div class="top-banner"></div>
+</div>
+<div id="question2-block-anchor">
+	<span></span>
+</div>
+<div class="container-questions">
 <div class="questions-block">
 					<div class="question-title">
 						<h3 id="Q2">Question 2</h3>
@@ -152,14 +180,14 @@
 							<input type="radio" id="a1Q2" name="answers2" value="1"/>
 							<a class="answer" href="#a1Q2popup"><span>Aucun</span></a>
 							<div class="popup" id="a1Q2popup">
-								<div class="popup-inner"> 
+								<div class="popup-inner">
 								  <div class="popupphoto">
 									<img src="https://media.giphy.com/media/rmi45iyhIPuRG/giphy.gif" alt="good answer">
 								  </div>
 								  <div class="popuptext">
 									<h1>Félicitation tu as trouvé la bonne réponse !</h1>
 									<p>La Wild Code School ne requiert aucun pré-requis!<br>
-									<a class="nxtQestion" href=#Q3>Question suivante !</a></p>
+									<a class="nxtQestion" href=#question3-block-anchor>Question suivante !</a></p>
 								  </div>
 							  </div>
 							</div>
@@ -168,13 +196,13 @@
 							<input type="radio" id="a2Q2" name="answers2" value="0"/>
 							<a class="answer" href="#a2Q2popup"><span>Savoir coder</span></a>
 							<div class="wrong-popup" id="a2Q2popup">
-								<div class="wrong-popup-inner"> 
+								<div class="wrong-popup-inner">
 								  <div class="wrong-popupphoto">
 									<img src="https://media.giphy.com/media/1QhmDy91F9veMRLpvK/giphy.gif" alt="wrong answer">
 								  </div>
 								  <div class="wrong-popuptext">
 									<p>Mauvaise réponse... <br>La réponse était Aucun !
-									<a class="nxtQestion" href=#Q3>Question suivante !</a></p>
+									<a class="nxtQestion" href=#question3-block-anchor>Question suivante !</a></p>
 								  </div>
 							  </div>
 							</div>
@@ -182,13 +210,13 @@
 								<input type="radio" id="a3Q2" name="answers2" value="0"/>
 								<a class="answer" href="#a3Q2popup"><span>Posséder un ordinateur portable</span></a>
 								<div class="wrong-popup" id="a3Q2popup">
-									<div class="wrong-popup-inner"> 
+									<div class="wrong-popup-inner">
 									  <div class="wrong-popupphoto">
 										<img src="https://media.giphy.com/media/1QhmDy91F9veMRLpvK/giphy.gif" alt="wrong answer">
 									  </div>
 									  <div class="wrong-popuptext">
 										<p>Mauvaise réponse... <br>La réponse était Aucun !
-										<a class="nxtQestion" href=#Q3>Question suivante !</a></p>
+										<a class="nxtQestion" href=#question3-block-anchor>Question suivante !</a></p>
 									  </div>
 								  </div>
 								</div>
@@ -197,20 +225,31 @@
 								<input type="radio" id="a4Q2" name="answers2" value="0"/>
 								<a class="answer" href="#a4Q2popup"><span>Avoir une recommandation d'Alain Chabat</span></a>
 								<div class="wrong-popup" id="a4Q2popup">
-									<div class="wrong-popup-inner"> 
+									<div class="wrong-popup-inner">
 									  <div class="wrong-popupphoto">
 										<img src="https://media.giphy.com/media/1QhmDy91F9veMRLpvK/giphy.gif" alt="wrong answer">
 									  </div>
 									  <div class="wrong-popuptext">
 										<p>Mauvaise réponse... <br>La réponse était Aucun !
-										<a class="nxtQestion" href=#Q3>Question suivante !</a></p>
+										<a class="nxtQestion" href=#question3-block-anchor>Question suivante !</a></p>
 									  </div>
 								  </div>
 								</div>
 							</label>
 					</div>
 </div>
+<div class="scoring-block">
+	<span>test</span>
+</div>
+</div>
 <!-- QUESTION 3  -->
+<div>
+	<div class="top-banner"></div>
+</div>
+<div id="question3-block-anchor">
+	<span></span>
+</div>
+<div class="container-questions">
 <div class="questions-block">
 					<div class="question-title">
 						<h3 id="Q3">Question 3</h3>
@@ -223,12 +262,12 @@
 							<input type="radio" id="a1Q3" name="answers3" value="0"/>
 							<a class="answer" href="#a1Q3popup"><span>La chapelle Tokyo</span></a>
 							<div class="wrong-popup" id="a1Q3popup">
-								<div class="wrong-popup-inner"> 
+								<div class="wrong-popup-inner">
 								  <div class="wrong-popupphoto">
 									<img src="https://media.giphy.com/media/1QhmDy91F9veMRLpvK/giphy.gif" alt="wrong answer">
 								  </div>
 								  <div class="wrong-popuptext">
-									<p>Mauvaise réponse... <br>La réponse était la Chapelle Foujita !
+									<p>Mauvaise réponse... <br>La réponse était la Chapelle Foujita :<br>
 									<a class="nxtQestion" href=#Q4>Question suivante !</a></p>
 								  </div>
 							  </div>
@@ -238,7 +277,7 @@
 									<input type="radio" id="a2Q3" name="answers3" value="0"/>
 									<a class="answer" href="#a2Q3popup"><span>La chapelle Osaka</span></a>
 									<div class="wrong-popup" id="a2Q3popup">
-										<div class="wrong-popup-inner"> 
+										<div class="wrong-popup-inner">
 										  <div class="wrong-popupphoto">
 											<img src="https://media.giphy.com/media/1QhmDy91F9veMRLpvK/giphy.gif" alt="wrong answer">
 										  </div>
@@ -253,7 +292,7 @@
 									<input type="radio" id="a3Q3" name="answers3" value="1"/>
 									<a class="answer" href="#a3Q3popup"><span>La chapelle Foujita</span></a>
 									<div class="popup" id="a3Q3popup">
-										<div class="popup-inner"> 
+										<div class="popup-inner">
 										  <div class="popupphoto">
 											<img src="https://media.giphy.com/media/rmi45iyhIPuRG/giphy.gif" alt="good answer">
 										  </div>
@@ -269,7 +308,7 @@
 							<input type="radio" id="a4Q3" name="answers3" value="0"/>
 							<a class="answer" href="#a4Q3popup"><span>La chapelle Son Goku</span></a>
 							<div class="wrong-popup" id="a4Q3popup">
-								<div class="wrong-popup-inner"> 
+								<div class="wrong-popup-inner">
 								  <div class="wrong-popupphoto">
 									<img src="https://media.giphy.com/media/1QhmDy91F9veMRLpvK/giphy.gif" alt="wrong answer">
 								  </div>
@@ -281,6 +320,10 @@
 							</div>
 						</label>
 					</div>
+</div>
+<div class="scoring-block">
+	<span>test</span>
+</div>
 </div>
 					<div>
 					<p>Votre score est de :<output id="score"name="score">0</output></p>
