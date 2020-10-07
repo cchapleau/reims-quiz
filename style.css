@@ -462,7 +462,7 @@ html, body {
   z-index: 2;
   visibility: hidden;
   opacity: 0;
-  overflow: hiden;
+  overflow: hidden;
   transition: .64s ease-in-out;
 }
 .popup-inner {
@@ -493,6 +493,7 @@ html, body {
   width: 150%;
   height: 100%;
 }
+
 
 .popuptext p {
   font-size: 1.2vw;
@@ -567,7 +568,7 @@ html, body {
   z-index: 2;
   visibility: hidden;
   opacity: 0;
-  overflow: hiden;
+  overflow: hidden;
   transition: .92s ease-in-out;
 }
 
@@ -657,6 +658,66 @@ html, body {
 
 
 
+/* FOOTER*/
+
+footer {
+  background-color: #d04d42;
+  height: 450px;
+}
+
+.footertitle {
+  font-size: 20px;
+}
+
+.classfooter {
+  width: 30%;
+  height: 245px;
+  border-width:10px;
+  border-style:ridge;
+  border-color:black;
+}
+
+.wildfooter {
+  width: 30%;
+  height: 245px;
+  border-width:10px;
+  border-style:ridge;
+  border-color:black;
+
+}
+.reimsfooter {
+  width: 30%;
+  height: 245px;
+  border-width:10px;
+  border-style:ridge;
+  border-color:black;
+}
+
+
+footer a {
+  text-decoration: none;
+  color: white;
+  over
+}
+
+footer p {
+  color:white;
+  text-align:center;
+}
+
+.imgfooter{
+  display: flex;
+  justify-content: space-around;
+}
+
+footer a:hover{
+  color : #E9D107;
+}
+
+footer img:hover{
+  border-color:rgb(17, 3, 207);
+  transform:scale(1.0,1.0) rotate(5deg);
+}
 
 .container-questions {
   background-image: url(https://raw.githubusercontent.com/cchapleau/reims-quiz/b6dd4f4c7b759a31976770d049306032375355fa/img/television3.svg);
@@ -861,6 +922,7 @@ output#score {
   .wrong-popup-inner, .popup-inner {
     width: 90%;
     height: 60%;
+  }
 }
 
-/***** RESPONSIVE - END *****/
+/* RESPONSIVE - END */
