@@ -693,10 +693,8 @@ output {
 /* FOOTER*/
 
 footer {
-  text-align:center;
   background-color: #d04d42;
-  color:white;
-  height: 400px;
+  height: 450px;
 }
 
 .footertitle {
@@ -705,18 +703,50 @@ footer {
 
 .classfooter {
   width: 30%;
+  height: 245px;
+  border-width:10px;
+  border-style:ridge;
+  border-color:black;
 }
 
 .wildfooter {
   width: 30%;
+  height: 245px;
+  border-width:10px;
+  border-style:ridge;
+  border-color:black;
+  
 }
 .reimsfooter {
   width: 30%;
-  height: 235px;
+  height: 245px;
+  border-width:10px;
+  border-style:ridge;
+  border-color:black;
 }
 
-.imgfooter {
-  justify-content: space-between;
-  align-items: center;
+
+footer a {
+  text-decoration: none;
+  color: white;
+  over
 }
 
+footer p {
+  color:white;
+  text-align:center;
+}
+
+.imgfooter{
+  display: flex;
+  justify-content: space-around;
+}
+
+footer a:hover{
+  color : #E9D107;
+}
+
+footer img:hover{
+  border-color:rgb(17, 3, 207);
+  transform:scale(1.0,1.0) rotate(5deg);
+}
