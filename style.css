@@ -1,7 +1,15 @@
 /***** GENERAL - BEGIN *****/
+@font-face{
+  font-family:'ArchitectsDaughter-Regular';
+  src: url('ArchitectsDaughter-Regular.ttf')
+  format('truetype');
+}
 
 .top-banner {
   height: 12vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 body {
@@ -14,8 +22,22 @@ header {
   color: #fff;
   font-size: 3vw;
   text-align: center;
-  height: 16vh;
-  padding: 2%;
+  font-family:ArchitectsDaughter-Regular;
+  font-weight: bold;
+  text-shadow: white 0.1em 0.1em 0.2em;
+}
+
+.horizon{
+  color: #2b1fd1;
+}
+
+.production{
+  color: #E9D107;
+  margin: 0% 1%;
+}
+
+.presente{
+  color: rgb(221, 3, 3);
 }
 
 h1 {
@@ -70,7 +92,7 @@ footer {
 
 .blue{
   font-size: 5vw;
-  background-color: rgb(10, 10, 180);
+  background-color:  #2b1fd1;
   color: white;
   margin: 20px;
 }
@@ -227,7 +249,10 @@ footer {
 
 #questions-block-anchor {
   padding-top: 12vh;
-  margin-bottom: -12vh;
+}
+
+#question2-block-anchor {
+  padding-top: 12vh;
 }
 
 .questions-block {
@@ -239,7 +264,7 @@ footer {
   background-size: cover;
   width: 60%;
   margin: 1.2vw 5vw ;
-  min-height: 85vh;
+  height: 80vh;
   border: 2vw solid rgb(221, 3, 3);
   box-sizing: border-box;
   border-radius: 50% / 10%;
@@ -490,9 +515,6 @@ html, body {
   width: 150%;
   height: 100%;
 }
-
-
-
 /*.popuptext {
   display: flex;
   flex-direction: column;
@@ -614,10 +636,11 @@ html, body {
 }*/
 
 .wrong-popuptext p {
-  font-size: 24px;
+  font-size: 1.2vh;
   color: white;
   font-weight: bold;
   line-height: 1.5;
+  word-wrap: break-word;
 }
 
 
@@ -666,6 +689,7 @@ output {
 
 
 
+
 /* FOOTER*/
 
 footer {
@@ -695,3 +719,4 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
+
