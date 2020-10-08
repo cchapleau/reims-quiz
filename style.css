@@ -657,66 +657,6 @@ html, body {
 
 
 
-/* FOOTER*/
-
-footer {
-  background-color: #d04d42;
-  height: 450px;
-}
-
-.footertitle {
-  font-size: 20px;
-}
-
-.classfooter {
-  width: 30%;
-  height: 245px;
-  border-width:10px;
-  border-style:ridge;
-  border-color:black;
-}
-
-.wildfooter {
-  width: 30%;
-  height: 245px;
-  border-width:10px;
-  border-style:ridge;
-  border-color:black;
-  
-}
-.reimsfooter {
-  width: 30%;
-  height: 245px;
-  border-width:10px;
-  border-style:ridge;
-  border-color:black;
-}
-
-
-footer a {
-  text-decoration: none;
-  color: white;
-  over
-}
-
-footer p {
-  color:white;
-  text-align:center;
-}
-
-.imgfooter{
-  display: flex;
-  justify-content: space-around;
-}
-
-footer a:hover{
-  color : #E9D107;
-}
-
-footer img:hover{
-  border-color:rgb(17, 3, 207);
-  transform:scale(1.0,1.0) rotate(5deg);
-}
 
 .container-questions {
   background-image: url(https://raw.githubusercontent.com/cchapleau/reims-quiz/b6dd4f4c7b759a31976770d049306032375355fa/img/television3.svg);
@@ -828,3 +768,83 @@ footer img:hover{
 
 /* RESPONSIVE - END */
 
+
+/* FOOTER*/
+
+footer {
+  background-color: #d04d42;
+  height: 410px;
+  padding-top: 10px;
+}
+
+.footertitle {
+  font-size: 20px;
+}
+
+.classfooter {
+  width: 30%;
+  height: 245px;
+  border-width:10px;
+  border-style:ridge;
+  border-color:black;
+}
+
+.wildfooter {
+  width: 30%;
+  height: 245px;
+  border-width:10px;
+  border-style:ridge;
+  border-color:black;
+  
+}
+.reimsfooter {
+  width: 30%;
+  height: 245px;
+  border-width:10px;
+  border-style:ridge;
+  border-color:black;
+}
+
+
+footer a {
+  text-decoration: none;
+  color: white;
+  over
+}
+
+footer p {
+  color:white;
+  text-align:center;
+  margin-top:2px ;
+  margin-bottom:2px;
+}
+
+.imgfooter{
+  display: flex;
+  justify-content: space-around;
+}
+
+footer a:hover{
+  color : #E9D107;
+}
+
+footer img:hover{
+  border-color:rgb(17, 3, 207);
+  transform:scale(1.0,1.0) rotate(5deg);
+}
+
+.gitLogoFooter{
+  height: 25px;
+}
+.linkedinLogo{
+  height: 25px;
+}
+.linkedinLogo:hover{
+  border-color:rgb(17, 3, 207);
+  transform:scale(1.4,1.4) rotate(15deg);
+}
+
+.gitLogoFooter:hover {
+  border-color:rgb(17, 3, 207);
+  transform:scale(1.4,1.4) rotate(15deg);
+}
