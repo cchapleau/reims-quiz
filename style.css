@@ -214,7 +214,10 @@ footer {
 }
 
 .answers-block {
-  width: 70%;
+
+  display: block;
+  position: relative;
+  width: 65%;
 }
 
 .presentation-text {
@@ -296,20 +299,12 @@ form {
   text-align: justify;
 }
 
-.answer-block {
-  position: relative;
-}
-
 .answer {
   position: absolute;
   width: max-content;
   top: -33px;
   color: #fff;
 }
-
-
-
-
 
 /* Est ce que l'Id est obligatoire dans l'input du HTML ?? Ou peut on le remplacer par une classe ?? */
 
@@ -323,12 +318,12 @@ input[id="a2Q1"], input[id="a2Q2"], input[id="a2Q3"] {
   background-color: #16977f;
 }
 
-input[id="a3Q1"], input[id="a3Q2"], input[id="a3Q3"] {
+input[id="a3Q1"], input[id="a3Q2"], input[id="a3Q3"], input[id="a3Q4"], input[id="a3Q5"], input[id="a3Q6"], input[id="a3Q7"], input[id="a3Q8"], input[id="a3Q9"], input[id="a3Q10"], input[id="a3Q11"], input[id="a3Q12"]  {
   border: 2px solid #150ab4;
   background-color: #150ab4;
 }
 
-input[id="a4Q1"], input[id="a4Q2"], input[id="a4Q3"] {
+input[id="a4Q1"], input[id="a4Q2"], input[id="a4Q3"], input[id="a4Q4"], input[id="a4Q5"], input[id="a4Q6"], input[id="a4Q7"], input[id="a4Q8"], input[id="a4Q9"], input[id="a4Q10"], input[id="a4Q11"], input[id="a4Q12"]  {
   border: 2px solid #d04d42;
   background-color: #d04d42;
 }
@@ -366,22 +361,6 @@ input[type="radio"]:focus {
 
 input[type="radio"]:checked {
   background-color: #1FBED6;
-}
-
-input[type="radio"]:checked ~ span:first-of-type {
-  color: #000;
-  z-index: 9999;
-}
-
-label span:first-of-type {
-  left: 60px;
-  font-size: 21px;
-  font-weight: 600;
-}
-
-/**/
-label span {
-  top: 200px;
 }
 
 .rightAnswer {
@@ -428,6 +407,17 @@ input:checked + #reponse1 {
 
 /***** QUESTIONS BLOCK - END *****/
 
+/* scoring */
+
+#score {
+  display: flex;
+  font-size: 10vw;
+  margin: 6vw;
+  justify-content: center;
+  color: lightgoldenrodyellow;
+}
+
+/* FOOTER*/
 
 
 
@@ -457,7 +447,7 @@ footer {
   border-width:10px;
   border-style:ridge;
   border-color:black;
-
+  
 }
 .reimsfooter {
   width: 30%;
@@ -584,9 +574,7 @@ footer img:hover{
     left: 3.5vh;
     top: -1vh;
   }
-  label span:first-of-type {
-    font-size: 2.5vw;
-  }
+
   .scoring-block {
     height: 51vh;
   }
@@ -619,6 +607,161 @@ footer img:hover{
 
 /* RESPONSIVE - END */
 
+/* Answers of questions */
+
+input {
+  position: relative;
+
+}
+span {
+  display: none
+}
+input:checked + label .wrongAnswer1 {
+  top: 5%;
+  display: block;
+  width: 38vw;
+  position: 1;
+  background-color: red;
+  color: white;
+  font-weight: 600;
+  font-style: bold;
+}
+input:checked + label .wrongAnswer2 {
+  display: block;
+  position: relative;
+  top: 40px;
+  right: 50px;
+  width: 30vw;
+  position: 1;
+  background-color: red;
+  color: white;
+  font-weight: 600;
+  font-style: bold;
+}
+input:checked + label .wrongAnswer3 {
+  display: block;
+  position: relative;
+  top: 40px;
+  right: 50px;
+  width: 30vw;
+  position: 1;
+  background-color: red;
+  color: white;
+  font-weight: 600;
+  font-style: bold;
+}
+input:checked + label .wrongAnswer4 {
+  display: block;
+  position: relative;
+  top: 40px;
+  right: 50px;
+  width: 30vw;
+  position: 1;
+  background-color: red;
+  color: white;
+  font-weight: 600;
+  font-style: bold;
+}
+input:checked + label .goodAnswer1 {
+  display: block;
+  position: relative;
+  top: 40px;
+  right: 50px;
+  width: 30vw;
+  position: 1;
+  background-color: lightgreen;
+  color: white;
+  font-weight: 600;
+  font-style: bold;
+}
+input:checked + label .goodAnswer2 {
+  display: block;
+  position: relative;
+  top: 40px;
+  right: 50px;
+  width: 30vw;
+  position: 1;
+  background-color: lightgreen;
+  color: white;
+  font-weight: 600;
+  font-style: bold;
+}
+input:checked + label .goodAnswer3 {
+  display: block;
+  position: relative;
+  top: 40px;
+  right: 50px;
+  width: 30vw;
+  position: 1;
+  background-color: lightgreen;
+  color: white;
+  font-weight: 600;
+  font-style: bold;
+}
+input:checked + label .goodAnswer4 {
+  display: block;
+  position: relative;
+  top: 40px;
+  right: 50px;
+  width: 30vw;
+  position: 1;
+  background-color: lightgreen;
+  color: white;
+  font-weight: 600;
+  font-style: bold;
+}
+.reponse {
+  color: white;
+  left: 60px;
+  font-size: 21px;
+  font-weight: 600;
+  font-style: bold;
+  display: inline;
+  position: relative;
+  top: -12%;
+}
+
+/* next button */
+.scoring-block-sticky {
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  height: 80vh;
+  top: 36vh;
+  margin-bottom: -100vh;
+  width: 98%;
+}
+.box1 {
+  width: 70%;
+}
+.next-question-button {
+  display: flex;
+  justify-content: center;
+  padding-top: 5vh;
+  margin-bottom: -5vh;
+}
+
+.next-question-button a {
+  text-decoration: none;
+  font-size: 36px;
+  font-weight: 700;
+  color: rgb(10, 10, 180);
+}
+
+.next-question-button button:hover, .next-question-button button a:hover {
+  color: #E9D107;
+  background-color: rgb(211, 7, 7);
+  border: 2px solid rgb(211, 7, 7);
+}
+
+.next-question-button button {
+  background-color: #d6a7d2;
+  border: 2px solid #d6a7d2;
+  height: 9vh;
+  width: max-content;
+  margin-top: -20vh;
+  padding: 15px;
+}
 /* FOOTER*/
 
 footer {
