@@ -846,5 +846,5 @@ footer img:hover{
 
 .gitLogoFooter:hover {
   border-color:rgb(17, 3, 207);
-  transform:scale(1.4,1.4) rotate(15deg);
+  transform:scale(1.4,1.4) rotate(-15deg);
 }
