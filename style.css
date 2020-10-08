@@ -95,6 +95,7 @@ footer {
   background-color:  #2b1fd1;
   color: white;
   margin: 20px;
+  
 }
 
 .banner-text-quiz{
@@ -430,233 +431,83 @@ input:checked + #reponse1 {
 
 
 
-/* popup good Answer */
 
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600&subset=latin-ext");
-* {
-  box-sizing: border-box;
+/* FOOTER - BEGIN */
+
+footer {
+  background-color: #d04d42;
+  height: 450px;
 }
 
-html, body {
-  font-family: 'Raleway', sans-serif;
-  font-size: 16px;
+.footertitle {
+  font-size: 20px;
 }
 
-@media screen and (max-width: 768px) {
-  html, body {
-    font-size: 12px;
-  }
+.classfooter {
+  width: 30%;
+  height: 245px;
+  border-width:10px;
+  border-style:ridge;
+  border-color:black;
 }
 
-.popup {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  bottom: 0;
-  right: 0;
-  background-color: #000;
-  z-index: 2;
-  visibility: hidden;
-  opacity: 0;
-  overflow: hidden;
-  transition: .64s ease-in-out;
+.wildfooter {
+  width: 30%;
+  height: 245px;
+  border-width:10px;
+  border-style:ridge;
+  border-color:black;
+
 }
-.popup-inner {
-  position: relative;
-  bottom: -100vw;
-  right: -100vh;
-  display: flex;
-  align-items: center;
-  max-width: 800px;
-  max-height: 600px;
-  width: 60%;
-  height: 80%;
-  background-color:#4AF130;
-  transform: rotate(32deg);
-  transition: .64s ease-in-out;
+.reimsfooter {
+  width: 30%;
+  height: 245px;
+  border-width:10px;
+  border-style:ridge;
+  border-color:black;
 }
 
 
-.popupphoto {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-.popupphoto img {
-  width: 150%;
-  height: 100%;
-}
-
-
-.popuptext p {
-  font-size: 1.2vw;
-  color: white;
-  font-weight: bold;
-  line-height: 1.5;
-  padding: 2vw;
-  text-align: justify;
-}
-
-.popuptext a {
-	text-decoration: none;
-	color:  #47BDFF;
-}
-.popup:target {
-  visibility: visible;
-  opacity: 1;
-}
-.popup:target .popup-inner {
-  bottom: 0;
-  right: 0;
-  transform: rotate(0);
-}
-.closepopup {
-  position: absolute;
-  right: -1rem;
-  top: -1rem;
-  width: 3rem;
-  height: 3rem;
-  font-size: .875rem;
-  font-weight: 300;
-  border-radius: 100%;
-  background-color: #47BDFF;
-  z-index: 4;
-  color: #fff;
-  line-height: 3rem;
-  text-align: center;
-  cursor: pointer;
+footer a {
   text-decoration: none;
-}
-
-
-/*  popup wrong answer   */
-
-
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600&subset=latin-ext");
-* {
-  box-sizing: border-box;
-}
-
-html, body {
-  font-family: 'Raleway', sans-serif;
-  font-size: 16px;
-}
-
-@media screen and (max-width: 768px) {
-  html, body {
-    font-size: 12px;
-  }
-}
-
-.wrong-popup {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  bottom: 0;
-  right: 0;
-  background-color: #000;
-  z-index: 2;
-  visibility: hidden;
-  opacity: 0;
-  overflow: hidden;
-  transition: .92s ease-in-out;
-}
-
-.wrong-popup-inner {
-  position: relative;
-  bottom: -100vw;
-  right: -100vh;
-  display: flex;
-  align-items: center;
-  max-width: 800px;
-  max-height: 600px;
-  width: 60%;
-  height: 80%;
-  background-color:hsl(0, 88%, 52%);
-  transform: rotate(32deg);
-  transition: .64s ease-in-out;
-}
-
-
-.wrong-popupphoto {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-.wrong-popupphoto img {
-  width: 150%;
-  height: 100%;
-}
-
-.wrong-popuptext p {
-  font-size: 1.2vw;
   color: white;
-  font-weight: bold;
-  line-height: 1.5;
-  word-wrap: break-word;
-  padding: 2vw;
-  text-align: justify;
 }
 
-
-.wrong-popuptext a {
-	text-decoration: none;
-	color:  #47BDFF;
-}
-.wrong-popup:target {
-  visibility: visible;
-  opacity: 1;
-}
-.wrong-popup:target .wrong-popup-inner {
-  bottom: 0;
-  right: 0;
-  transform: rotate(0);
-}
-.wrong-closepopup {
-  position: absolute;
-  right: -1rem;
-  top: -1rem;
-  width: 3rem;
-  height: 3rem;
-  font-size: .875rem;
-  font-weight: 300;
-  border-radius: 100%;
-  background-color: #47BDFF;
-  z-index: 4;
-  color: #fff;
-  line-height: 3rem;
+footer p {
+  color: white;
   text-align: center;
-  cursor: pointer;
-  text-decoration: none;
 }
 
-/* scoring */
-
-#score {
+.imgfooter{
   display: flex;
-  font-size: 10vw;
-  margin: 6vw;
-  justify-content: center;
-  color: lightgoldenrodyellow;
+  justify-content: space-around;
 }
 
+footer a:hover{
+  color : #E9D107;
+}
+
+footer img:hover{
+  border-color:rgb(17, 3, 207);
+  transform:scale(1.0,1.0) rotate(5deg);
+}
+
+/* FOOTER - END */
 
 
 
+.container-first-television {
+  background-image: url(https://raw.githubusercontent.com/cchapleau/reims-quiz/1848f556d6a89d12a11cbb07b9c0a1921d1e01e7/img/blue-television.svg);
+  display: flex;
+  background-repeat: no-repeat;
+}
 
-
+.container-red-television {
+  background-image: url(https://raw.githubusercontent.com/cchapleau/reims-quiz/188a06171853d76385b374a253723caa9d17e002/img/red-television.svg);
+  display: flex;
+  background-repeat: no-repeat;
+  margin-top: -8vh;
+}
 
 .container-questions {
   background-image: url(https://raw.githubusercontent.com/cchapleau/reims-quiz/b6dd4f4c7b759a31976770d049306032375355fa/img/television3.svg);
@@ -812,7 +663,6 @@ footer {
 footer a {
   text-decoration: none;
   color: white;
-  over
 }
 
 footer p {
