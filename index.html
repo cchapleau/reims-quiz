@@ -10,41 +10,37 @@
 
 		<header>
 			<div>
-				<div class="top-banner">
-                    <span class="horizon">HORIZON</span>
-                    <span class="production">PRODUCTION</span>
-                    <span class="presente">PRESENTE</span>
-                </div>
+				<div class="top-banner">HORIZON PRODUCTION PRESENTE</div>
 			</div>
 		</header>
 
 <!-- Banner Block  -->
 <div class="container-banner"> <!-- test -->
-    <section class="banner-block">
-        <div class="banner-text-reims">
-            <span class="blue"> R </span>
-            <span class="blue"> E </span>
-            <span class="blue"> I </span>
-            <span class="blue"> M </span>
-            <span class="blue"> S </span>
-            <br>
-        </div>
-        <div class="banner-text-quiz">
-            <span class="red"> Q </span>
-            <span class="yellow"> U </span>
-            <span class="red"> I </span>
-            <span class="yellow"> Z </span>
-        </div>
-        <div class="banner-paragraph-block">
-            <h1>Reims Quiz</h1>
-            <p class="banner-paragraph">Envie de découvrir ton futur campus ?</p>
-        </div>
-        <div class="banner-button">
-            <div class ="go-button">
-                <a href="#presentation-block-anchor">GO</a>
-            </div>
-        </div>
-    </section>
+		<section class="banner-block">
+			<div class="banner-text-reims">
+				<span class="blue"> R </span>
+				<span class="blue"> E </span>
+				<span class="blue"> I </span>
+				<span class="blue"> M </span>
+				<span class="blue"> S </span>
+				<br>
+			</div>
+			<div class="banner-text-quiz">
+				<span class="red"> Q </span>
+				<span class="yellow"> U </span>
+				<span class="red"> I </span>
+				<span class="yellow"> Z </span>
+			</div>
+			<div class="banner-paragraph-block">
+				<h1>Reims Quiz</h1>
+					<p class="banner-paragraph">Envie de découvrir ton futur campus ?</p>
+			</div>
+			<div class="banner-button">
+				<div class ="go-button">
+					<a href="#presentation-block-anchor">GO</a>
+				</div>
+			</div>
+		</section>
 </div>
 
 <!-- Presentation Block -->
@@ -59,7 +55,7 @@
         <h2>Presentation du Quiz</h2>
     </div>
     <div class="presentation-paragraph">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus fuga aperiam vel. Modi incidunt odit esse ratione nostrum ducimus qui temporibus quis distinctio suscipit quo perspiciatis, non, recusandae assumenda dolor!</p>
+        <p>A travers ce quiz vous pourrez découvrir quelques anecdotes sur la ville de Reims et la Wild Code School! Amusez-vous bien!</p>
     </div>
     <div class="presentation-button">
         <div class ="go-play-button">
@@ -68,446 +64,86 @@
     </div>
 </section>
 <!-- Question #1 Block -->
-<div id="questions-block-anchor">
+		<div id="questions-block-anchor">
+			<span></span>
+		</div>	
+	<form action="#" oninput="score.value=parseInt(question1.value || 0)+parseInt(question2.value || 0)+parseInt(question3.value || 0)+parseInt(question4.value || 0)+parseInt(question5.value || 0)+parseInt(question6.value || 0)+parseInt(question7.value || 0)+parseInt(question8.value || 0)+parseInt(question9.value || 0)+parseInt(question10.value || 0)+parseInt(question11.value || 0)+parseInt(question12.value || 0)">
+<!-- QUESTION 1  -->
+		<div class="container-questions">
+			<div class="questions-block">
+					<div class="question-title">
+						<h3 id="Q1">Question 1</h3>
+					</div>
+					<div class="question-paragraph">
+						<span class="question">Quel monument de Reims à vu le sacre de plusieurs rois ?</span>
+					</div>
+					<div class="answers-block">
+						    <input id="a1Q1"name="question1" type="radio" value="0">
+							<label for="a1Q1"><span class="reponse">La basilique St Remi</span><span class="wrongAnswer1">Mauvaise réponse... <br> 	
+								La réponse était la cathédrale de Reims.<br>
+								<a href="#question2-block-anchor">QUESTION SUIVANTE</a></span></label>														
+							<input id="a2Q1" name="question1" type="radio" value="1">
+							<label  for="a2Q1" class="reponse">Cathédrale notre Dame de Reims<span class="goodAnswer2">Félicitation tu as trouvé la bonne réponse !<br>
+								La réponse était la cathédrale de Reims.<br>
+								<a href="#question2-block-anchor">QUESTION SUIVANTE</a></span></label>
+							<input id="a3Q1" name="question1" type="radio" value="0">
+							<label for="a3Q1" class="reponse">L'église St André<span class="wrongAnswer3">Mauvaise réponse... <br>
+								La réponse était la cathédrale de Reims.<br>
+								<a href="#question2-block-anchor">QUESTION SUIVANTE</a></span></label>
+							<input id="a4Q1" name="question1" type="radio" value="0">
+							<label  for="a4Q1" class="reponse">L'étoile de la mort<span class="wrongAnswer4">Mauvaise réponse... <br>
+								La réponse était la cathédrale de Reims.<br>
+								<a href="#question2-block-anchor">QUESTION SUIVANTE</a></span></label>						       
+					</div>
+		    </div>
+		</div>			
+	<div class="scoring-block">
+		<span>test</span>
+	</div>
+<!-- QUESTION 2  -->
+<div id="question2-block-anchor">
     <span></span>
 </div>
 <div>
-    <div class="general-banner"><img src="https://raw.githubusercontent.com/cchapleau/reims-quiz/master/img/reims-quiz-test.png"></div>
+    <div class="top-banner"></div>
 </div>
-<div id="questions-block-anchor">
+<div class="container-other-questions">
+<div class="questions-block">
+					<div class="question-title">
+						<h3 id="Q2">Question 2</h3>
+					</div>
+					<div class="question-paragraph">
+						<p class="question">Quels sont les pré-requis pour intégrer la Wild Code School ?</p>
+					</div>
+					<div class="answers-block">
+						<input id="a1Q2"name="question2" type="radio" value="1">
+						<label for="a1Q2">Aucun<span class="goodAnswer1">Félicitation tu as trouvé la bonne réponse !<br>
+							La Wild Code School ne requiert aucun pré-requis!<br>
+							<a href="#question3-block-anchor">QUESTION SUIVANTE</a></span></label>
+						<input id="a2Q2" name="question2" type="radio" value="0">
+						<label for="a2Q2">Savoir coder<span class="wrongAnswer2">Mauvaise réponse...<br>
+							La réponse était Aucun !<br>
+							<a href="#question3-block-anchor">QUESTION SUIVANTE</a></span></label></span></label>
+						<input id="a3Q2" name="question2" type="radio" value="0">
+						<label for="a3Q2">Posséder un ordinateur<span class="wrongAnswer3">Mauvaise réponse...<br>
+							La réponse était Aucun !<br>
+							<a href="#question3-block-anchor">QUESTION SUIVANTE</a></span></label></span></label>
+						<input id="a4Q2" name="question2" type="radio" value="0">
+						<label for="a4Q2">Avoir une recommandation d'Alain Chabat<span class="wrongAnswer4">Mauvaise réponse...<br>
+							La réponse était Aucun !<br>
+							<a href="#question3-block-anchor">QUESTION SUIVANTE</a></span></label></span></label>						       
+				    </div>
+		</div>
+	</div>
+	<div class="scoring-block">
+		<span>test</span>
+	</div>
+</div>
+<!-- QUESTION 3  -->
+<div id="question3-block-anchor">
     <span></span>
 </div>
-    <form action="#" oninput="score.value=parseInt(question1.value || 0)+parseInt(question2.value || 0)+parseInt(question3.value || 0)+parseInt(question4.value || 0)+parseInt(question5.value || 0)+parseInt(question6.value || 0)+parseInt(question7.value || 0)+parseInt(question8.value || 0)+parseInt(question9.value || 0)+parseInt(question10.value || 0)+parseInt(question11.value || 0)+parseInt(question12.value || 0)">
-        <div class="scoring-block-sticky">
-            <div class="box1"></div>
-                <div class="scoring-image">
-                    <div class="next-question-button">
-                        <button><a href="#question2-block-anchor">QUESTION SUIVANTE</a></button>
-                    </div>
-                    <img src="https://raw.githubusercontent.com/cchapleau/Merge-and-conflits/master/Scoring-test5.png" alt="a remplir">
-                    <p><output id="score" name="score">0</output></p>
-                </div>
-            </div>
-        </div>
-<!-- QUESTION 1 -->
-        <div class="container-first-television">
-            <div class="questions-block">
-                <div class="question-title">
-                    <h3 id="Q1">Question 1</h3>
-                </div>
-                <div class="question-paragraph">
-                    <span class="question">Quel monument de Reims à vu le sacre de plusieurs rois ?</span>
-                </div>
-                <div class="answers-block">
-                    <input id="a1Q1"name="question1" type="radio" value="0">
-                    <label for="a1Q1">La basilique St Remi<span class="wrongAnswer">Mauvaise réponse... <br>C'était la cathédrale de Reims :<br>
-                        Entre 1027 et 1825, il y a 31 rois qui ont été sacré à Reims, dont entre autres François 1er et Louis XIV.<br>
-                        <button><a href="#question2-block-anchor">QUESTION SUIVANTE</a></button></span></label>
-                    <input id="a2Q1" name="question1" type="radio" value="1">
-                    <label for="a2Q1">Cathédrale notre Dame de Reims<span class="goodAnswer">Félicitation tu as trouvé la bonne réponse !<br>
-                        Entre 1027 et 1825, il y a 31 rois qui ont été sacré à Reims, dont entre autres François 1er et Louis XIV.<br>
-                        <button><a href="#question2-block-anchor">QUESTION SUIVANTE</a></button></span></label>
-                    <input id="a3Q1" name="question1" type="radio" value="0">
-                    <label for="a3Q1">L'église St André<span class="wrongAnswer">Mauvaise réponse... <br>C'était la cathédrale de Reims :<br>
-                        Entre 1027 et 1825, il y a 31 rois qui ont été sacré à Reims, dont entre autres François 1er et Louis XIV.<br>
-                        <button><a href="#question2-block-anchor">QUESTION SUIVANTE</a></button></span></label>
-                    <input id="a4Q1" name="question1" type="radio" value="0">
-                    <label for="a4Q1">L'étoile de la mort<span class="wrongAnswer">Mauvaise réponse... <br>C'était la cathédrale de Reims :<br>
-                        Entre 1027 et 1825, il y a 31 rois qui ont été sacré à Reims, dont entre autres François 1er et Louis XIV.<br>
-                        <button><a href="#question2-block-anchor">QUESTION SUIVANTE</a></button></span></label>
-                </div>
-            </div>
-        </div>
-<!-- QUESTION 2 -->
-        <div id="question2-block-anchor">
-            <span></span>
-        </div>
-        <div>
-            <div class="general-banner"><img src="https://raw.githubusercontent.com/cchapleau/reims-quiz/master/img/reims-quiz-test.png"></div>
-        </div>
-        <div class="container-yellow-television">
-            <div class="questions-block">
-                <div class="question-title">
-                    <h3 id="Q2">Question 2</h3>
-                </div>
-                <div class="question-paragraph">
-                    <p class="question">Quels sont les pré-requis pour intégrer la Wild Code School ?</p>
-                </div>
-                <div class="answers-block">
-                    <input id="a1Q2"name="question2" type="radio" value="1">
-                    <label for="a1Q2">Aucun<span class="goodAnswer">Félicitation tu as trouvé la bonne réponse !<br>
-                        La Wild Code School ne requiert aucun pré-requis!<br>
-                        <button><a href="#question3-block-anchor">QUESTION SUIVANTE</a></button></span></label>
-                    <input id="a2Q2" name="question2" type="radio" value="0">
-                    <label for="a2Q2">Savoir coder<span class="wrongAnswer">Mauvaise réponse...<br>
-                        La réponse était Aucun !<br>
-                        <button><a href="#question3-block-anchor">QUESTION SUIVANTE</a></button></span></label>
-                    <input id="a3Q2" name="question2" type="radio" value="0">
-                    <label for="a3Q2">Posséder un ordinateur<span class="wrongAnswer">Mauvaise réponse...<br>
-                        La réponse était Aucun !<br>
-                        <button><a href="#question3-block-anchor">QUESTION SUIVANTE</a></button></span></label>
-                    <input id="a4Q2" name="question2" type="radio" value="0">
-                    <label for="a4Q2">Avoir une recommandation d'Alain Chabat<span class="wrongAnswer">Mauvaise réponse...<br>
-                        La réponse était Aucun !<br>
-                        <button><a href="#question3-block-anchor">QUESTION SUIVANTE</a></button></span></label>
-                </div>
-            </div>
-        </div>
-<!-- QUESTION 3 -->
-        <div id="question3-block-anchor">
-            <span></span>
-        </div>
-        <div>
-            <div class="general-banner"><img src="https://raw.githubusercontent.com/cchapleau/reims-quiz/master/img/reims-quiz-test.png"></div>
-        </div>
-        <div class="container-red-television">
-            <div class="questions-block">
-                <div class="question-title">
-                    <h3 id="Q3">Question 3</h3>
-                </div>
-                <div class="question-paragraph">
-                    <p class="question">Un japonais à construis une chapelle dans Reims, quel est son nom ?</p>
-                </div>
-                <div class="answers-block">
-                    <input id="a1Q3"name="question3" type="radio" value="0">
-                    <label for="a1Q3">Chapelle Tokyo<span class="wrongAnswer">Mauvaise réponse...
-                        La réponse était la Chapelle Foujita !<br>
-                        <button><a href="#question4-block-anchor">QUESTION SUIVANTE</a></button></span></label>
-                    <input id="a2Q3" name="question3" type="radio" value="1">
-                    <label for="a2Q3">Chapelle Foujita<span class="goodAnswer">Félicitation tu as trouvé la bonne réponse !<br>
-                        C'était bien la chapelle Foujita ! <br>
-                        <button><a href="#question4-block-anchor">QUESTION SUIVANTE</a></button></span></label>
-                    <input id="a3Q3" name="question3" type="radio" value="0">
-                    <label for="a3Q3">Chapelle Osaka<span class="wrongAnswer">Mauvaise réponse...
-                        La réponse était la Chapelle Foujita !<br>
-                        <button><a href="#question4-block-anchor">QUESTION SUIVANTE</a></button></span></label>
-                    <input id="a4Q3" name="question3" type="radio" value="0">
-                    <label for="a4Q3">Chapelle Son Goku<span class="wrongAnswer">Mauvaise réponse...
-                        La réponse était la Chapelle Foujita !<br>
-                        <button><a href="#question4-block-anchor">QUESTION SUIVANTE</a></button></span></label>
-                </div>
-            </div>
-        </div>
-<!-- QUESTION 4 -->
-        <div id="question4-block-anchor">
-            <span></span>
-        </div>
-        <div>
-            <div class="general-banner"><img src="https://raw.githubusercontent.com/cchapleau/reims-quiz/master/img/reims-quiz-test.png"></div>
-        </div>
-        <div class="container-blue-television">
-            <div class="questions-block">
-                <div class="question-title">
-                    <h3 id="Q4">Question 4</h3>
-                </div>
-                <div class="question-paragraph">
-                    <p class="question">Quel est le surnom des habitants de Reims?</p>
-                </div>
-                <div class="answers-block">
-                    <input id="a1Q4"name="question4" type="radio" value="0">
-                    <label for="a1Q4">Les olives<span class="wrongAnswer">Mauvaise réponse...
-                        La réponse était les cornichons !<br>
-                        <button><a href="#question5-block-anchor">QUESTION SUIVANTE</a></button></span></label>
-                    <input id="a2Q4" name="question4" type="radio" value="1">
-                    <label for="a2Q4">Les cornichons<span class="goodAnswer">Félicitation tu as trouvé la bonne réponse !<br>
-                        C'était bien les cornichons !<br>
-                        <button><a href="#question5-block-anchor">QUESTION SUIVANTE</a></button></span></label>
-                    <input id="a3Q4" name="question4" type="radio" value="0">
-                    <label for="a3Q4">Les saucissons<span class="wrongAnswer">Mauvaise réponse...
-                        La réponse était les cornichons !<br>
-                        <button><a href="#question5-block-anchor">QUESTION SUIVANTE</a></button></span></label>
-                    <input id="a4Q4" name="question4" type="radio" value="0">
-                    <label for="a4Q4">La réponse 4<span class="wrongAnswer">Mauvaise réponse...
-                        La réponse était les cornichons !<br>
-                        <button><a href="#question5-block-anchor">QUESTION SUIVANTE</a></button></span></label>
-                </div>
-            </div>
-        </div>
-<!-- QUESTION 5 -->
-        <div id="question5-block-anchor">
-            <span></span>
-        </div>
-        <div>
-            <div class="general-banner"><img src="https://raw.githubusercontent.com/cchapleau/reims-quiz/master/img/reims-quiz-test.png"></div>
-        </div>
-        <div class="container-yellow-television">
-            <div class="questions-block">
-                <div class="question-title">
-                    <h3 id="Q5">Question 5</h3>
-                </div>
-                <div class="question-paragraph">
-                    <p class="question">Quel est le surnom des habitants de Reims?</p>
-                </div>
-                <div class="answers-block">
-                    <input id="a1Q5"name="question5" type="radio" value="0">
-                    <label for="a1Q5">Les olives<span class="wrongAnswer">Mauvaise réponse...
-                        La réponse était les cornichons !<br>
-                        <button><a href="#question6-block-anchor">QUESTION SUIVANTE</a></button></span></label>
-                    <input id="a2Q5" name="question5" type="radio" value="1">
-                    <label for="a2Q5">Les cornichons<span class="goodAnswer">Félicitation tu as trouvé la bonne réponse !<br>
-                        C'était bien les cornichons !<br>
-                        <button><a href="#question6-block-anchor">QUESTION SUIVANTE</a></button></span></label>
-                    <input id="a3Q5" name="question5" type="radio" value="0">
-                    <label for="a3Q5">Les saucissons<span class="wrongAnswer">Mauvaise réponse...
-                        La réponse était les cornichons !<br>
-                        <button><a href="#question6-block-anchor">QUESTION SUIVANTE</a></button></span></label>
-                    <input id="a4Q5" name="question5" type="radio" value="0">
-                    <label for="a4Q5">La réponse 4<span class="wrongAnswer">Mauvaise réponse...
-                        La réponse était les cornichons !<br>
-                        <button><a href="#question6-block-anchor">QUESTION SUIVANTE</a></button></span></label>
-                </div>
-            </div>
-        </div>
-<!-- QUESTION 6 -->
-        <div id="question6-block-anchor">
-            <span></span>
-        </div>
-        <div>
-            <div class="general-banner"><img src="https://raw.githubusercontent.com/cchapleau/reims-quiz/master/img/reims-quiz-test.png"></div>
-        </div>
-        <div class="container-red-television">
-            <div class="questions-block">
-                <div class="question-title">
-                    <h3 id="Q6">Question 6</h3>
-                </div>
-                <div class="question-paragraph">
-                    <p class="question">Quand a été créé la Wild Code School?</p>
-                </div>
-                <div class="answers-block">
-                    <input id="a1Q6"name="question6" type="radio" value="0">
-                    <label for="a1Q6">2019<span class="wrongAnswer">Mauvaise réponse...
-                        La réponse était les cornichons !<br>
-                        <button><a href="#question7-block-anchor">QUESTION SUIVANTE</a></button></span></label>
-                    <input id="a2Q6" name="question6" type="radio" value="0">
-                    <label for="a2Q6">2001<span class="wrongAnswer">Mauvaise réponse...<br>
-                        C'était bien les cornichons !<br>
-                        <button><a href="#question7-block-anchor">QUESTION SUIVANTE</a></button></span></label>
-                    <input id="a3Q6" name="question6" type="radio" value="1">
-                    <label for="a3Q6">2014<span class="goodAnswer">Félicitation tu as trouvé la bonne réponse !<br>
-                        La réponse était les cornichons !<br>
-                        <button><a href="#question7-block-anchor">QUESTION SUIVANTE</a></button></span></label>
-                    <input id="a4Q6" name="question6" type="radio" value="0">
-                    <label for="a4Q6">Il y a bien longtemps dans une galaxie lointaine, très lointaine...<span class="wrongAnswer">Mauvaise réponse...
-                        La réponse était les cornichons !<br>
-                        <button><a href="#question7-block-anchor">QUESTION SUIVANTE</a></button></span></label>
-                </div>
-            </div>
-        </div>
-<!-- QUESTION 7 -->
-        <div id="question7-block-anchor">
-            <span></span>
-        </div>
-        <div>
-            <div class="general-banner"><img src="https://raw.githubusercontent.com/cchapleau/reims-quiz/master/img/reims-quiz-test.png"></div>
-        </div>
-        <div class="container-yellow-television">
-            <div class="questions-block">
-                <div class="question-title">
-                    <h3 id="Q7">Question 7</h3>
-                </div>
-                <div class="question-paragraph">
-                    <p class="question">Comment s'appelle la place du centre ville de Reims ?</p>
-                </div>
-                <div class="answers-block">
-                    <input id="a1Q7"name="question7" type="radio" value="1">
-                    <label for="a1Q7">La place d'Erlon<span class="goodAnswer">Félicitation tu as trouvé la bonne réponse !<br>
-                        La réponse était la place d'Erlon !<br>
-                        <button><a href="#question8-block-anchor">QUESTION SUIVANTE</a></button></span></label>
-                    <input id="a2Q7" name="question7" type="radio" value="0">
-                    <label for="a2Q7">La place de l'étoile<span class="wrongAnswer">Mauvaise réponse...<br>
-                        C'était bien la place d'Erlon !<br>
-                        <button><a href="#question8-block-anchor">QUESTION SUIVANTE</a></button></span></label>
-                    <input id="a3Q7" name="question7" type="radio" value="0">
-                    <label for="a3Q7">La place Stanislas<span class="wrongAnswer">Mauvaise réponse...<br>
-                        La réponse était la place d'Erlon !<br>
-                        <button><a href="#question8-block-anchor">QUESTION SUIVANTE</a></button></span></label>
-                    <input id="a4Q7" name="question7" type="radio" value="0">
-                    <label for="a4Q7">La place du Chef<span class="wrongAnswer">Mauvaise réponse...
-                        La réponse était la place d'Erlon !<br>
-                        <button><a href="#question8-block-anchor">QUESTION SUIVANTE</a></button></span></label>
-                </div>
-            </div>
-        </div>
-<!-- QUESTION 8 -->
-        <div id="question8-block-anchor">
-            <span></span>
-        </div>
-        <div>
-            <div class="general-banner"><img src="https://raw.githubusercontent.com/cchapleau/reims-quiz/master/img/reims-quiz-test.png"></div>
-        </div>
-        <div class="container-blue-television">
-            <div class="questions-block">
-                <div class="question-title">
-                    <h3 id="Q8">Question 8</h3>
-                </div>
-                <div class="question-paragraph">
-                    <p class="question">Quel est la particularité quand on étudie à la Wild Code School ?</p>
-                </div>
-                <div class="answers-block">
-                    <input id="a1Q8"name="question8" type="radio" value="1">
-                    <label for="a1Q8">Il faut être en chaussette<span class="goodAnswer">Félicitation tu as trouvé la bonne réponse !<br>
-                        La réponse était qu'il faut être en chaussette !<br>
-                        <button><a href="#question9-block-anchor">QUESTION SUIVANTE</a></button></span></label>
-                    <input id="a2Q8" name="question8" type="radio" value="0">
-                    <label for="a2Q8">Il est interdit de parler !<span class="wrongAnswer">Mauvaise réponse...<br>
-                        La réponse était qu'il faut être en chaussette !<br>
-                        <button><a href="#question9-block-anchor">QUESTION SUIVANTE</a></button></span></label>
-                    <input id="a3Q8" name="question8" type="radio" value="0">
-                    <label for="a3Q8">Il faut faire 10 exercices par jours !<span class="wrongAnswer">Mauvaise réponse...<br>
-                        La réponse était qu'il faut être en chaussette !<br>
-                        <button><a href="#question9-block-anchor">QUESTION SUIVANTE</a></button></span></label>
-                    <input id="a4Q8" name="question8" type="radio" value="0">
-                    <label for="a4Q8">Il faut posséder une baguette de sorcier !<span class="wrongAnswer">Mauvaise réponse...
-                        La réponse était qu'il faut être en chaussette !<br>
-                        <button><a href="#question9-block-anchor">QUESTION SUIVANTE</a></button></span></label>
-                </div>
-            </div>
-        </div>
-<!-- QUESTION 9 -->
-        <div id="question9-block-anchor">
-            <span></span>
-        </div>
-        <div>
-            <div class="general-banner"><img src="https://raw.githubusercontent.com/cchapleau/reims-quiz/master/img/reims-quiz-test.png"></div>
-        </div>
-        <div class="container-red-television">
-            <div class="questions-block">
-                <div class="question-title">
-                    <h3 id="Q9">Question 9</h3>
-                </div>
-                <div class="question-paragraph">
-                    <p class="question">Quel est la particularité quand on étudie à la Wild Code School ?</p>
-                </div>
-                <div class="answers-block">
-                    <input id="a1Q9"name="question9" type="radio" value="0">
-                    <label for="a1Q9">Le bus<span class="wrongAnswer">Mauvaise réponse...<br>
-                        La réponse était le Tramway !<br>
-                        <button><a href="#question10-block-anchor">QUESTION SUIVANTE</a></button></span></label>
-                    <input id="a2Q9" name="question9" type="radio" value="1">
-                    <label for="a2Q9">Le Tramway<span class="goodAnswer">Félicitation tu as trouvé la bonne réponse !<br>
-                        La réponse était le Tramway !<br>
-                        <button><a href="#question10-block-anchor">QUESTION SUIVANTE</a></button></span></label>
-                    <input id="a3Q9" name="question9" type="radio" value="0">
-                    <label for="a3Q9">Le TGV !<span class="wrongAnswer">Mauvaise réponse...<br>
-                        La réponse était le Tramway !<br>
-                        <button><a href="#question10-block-anchor">QUESTION SUIVANTE</a></button></span></label>
-                    <input id="a4Q9" name="question9" type="radio" value="0">
-                    <label for="a4Q9">Le poudlard Express !<span class="wrongAnswer">Mauvaise réponse...
-                        La réponse était le Tramway !<br>
-                        <button><a href="#question10-block-anchor">QUESTION SUIVANTE</a></button></span></label>
-                </div>
-            </div>
-        </div>
-<!-- QUESTION 10 -->
-        <div id="question10-block-anchor">
-            <span></span>
-        </div>
-        <div>
-            <div class="general-banner"><img src="https://raw.githubusercontent.com/cchapleau/reims-quiz/master/img/reims-quiz-test.png"></div>
-        </div>
-        <div class="container-yellow-television">
-            <div class="questions-block">
-                <div class="question-title">
-                    <h3 id="Q10">Question 10</h3>
-                </div>
-                <div class="question-paragraph">
-                    <p class="question">Où se situent les locaux de la WCS?</p>
-                </div>
-                <div class="answers-block">
-                    <input id="a1Q10"name="question10" type="radio" value="1">
-                    <label for="a1Q10">Près du centre ville<span class="goodAnswer">Félicitation tu as trouvé la bonne réponse !<br>
-                        La réponse était près du centre ville !<br>
-                        <button><a href="#question11-block-anchor">QUESTION SUIVANTE</a></button></span></label>
-                    <input id="a2Q10" name="question10" type="radio" value="0">
-                    <label for="a2Q10">A côté de la gare TGV de Bezannes<span class="wrongAnswer">Mauvaise réponse...<br>
-                        La réponse était près du centre ville !<br>
-                        <button><a href="#question11-block-anchor">QUESTION SUIVANTE</a></button></span></label>
-                    <input id="a3Q10" name="question10" type="radio" value="0">
-                    <label for="a3Q10">A côté de la fac de sciences<span class="wrongAnswer">Mauvaise réponse...<br>
-                        La réponse était près du centre ville !<br>
-                        <button><a href="#question11-block-anchor">QUESTION SUIVANTE</a></button></span></label>
-                    <input id="a4Q10" name="question10" type="radio" value="0">
-                    <label for="a4Q10">En terre du Milieu !<span class="wrongAnswer">Mauvaise réponse...
-                        La réponse était près du centre ville !<br>
-                        <button><a href="#question11-block-anchor">QUESTION SUIVANTE</a></button></span></label>
-                </div>
-            </div>
-        </div>
-<!-- QUESTION 11 -->
-        <div id="question11-block-anchor">
-            <span></span>
-        </div>
-        <div>
-            <div class="general-banner"><img src="https://raw.githubusercontent.com/cchapleau/reims-quiz/master/img/reims-quiz-test.png"></div>
-        </div>
-        <div class="container-blue-television">
-            <div class="questions-block">
-                <div class="question-title">
-                    <h3 id="Q11">Question 11</h3>
-                </div>
-                <div class="question-paragraph">
-                    <p class="question">Quel est le nom du stade où joue l'équipe de Foot de Reims ?</p>
-                </div>
-                <div class="answers-block">
-                    <input id="a1Q11"name="question11" type="radio" value="0">
-                    <label for="a1Q11">Le stade Arnaud Robinet<span class="wrongAnswer">Mauvaise réponse...<br>
-                        La réponse était le stade Auguste Delaune !<br>
-                        <button><a href="#question12-block-anchor">QUESTION SUIVANTE</a></button></span></label>
-                    <input id="a2Q11" name="question11" type="radio" value="0">
-                    <label for="a2Q11">Le stade d'Erlon<span class="wrongAnswer">Mauvaise réponse...<br>
-                        La réponse était le stade Auguste Delaune !<br>
-                        <button><a href="#question12-block-anchor">QUESTION SUIVANTE</a></button></span></label>
-                    <input id="a3Q11" name="question11" type="radio" value="1">
-                    <label for="a3Q11">Le stade Auguste Delaune<span class="goodAnswer">Félicitation tu as trouvé la bonne réponse !<br>
-                        La réponse était le stade Auguste Delaune !<br>
-                        <button><a href="#question12-block-anchor">QUESTION SUIVANTE</a></button></span></label>
-                    <input id="a4Q11" name="question11" type="radio" value="0">
-                    <label for="a4Q11">Le stade terminal!<span class="wrongAnswer">Mauvaise réponse...
-                        La réponse était le stade Auguste Delaune !<br>
-                        <button><a href="#question12-block-anchor">QUESTION SUIVANTE</a></button></span></label>
-                </div>
-            </div>
-        </div>
-<!-- QUESTION BONUS -->
-        <div id="question12-block-anchor">
-            <span></span>
-        </div>
-        <div>
-            <div class="general-banner"><img src="https://raw.githubusercontent.com/cchapleau/reims-quiz/master/img/reims-quiz-test.png"></div>
-        </div>
-        <div class="container-bonus-television">
-            <div class="questions-block">
-                <div class="question-title">
-                    <h3 id="Q12">Question Bonus</h3>
-                </div>
-                <div class="question-paragraph">
-                    <p class="question">Selon la chanson de Dorothée, de quelles couleurs sont ses chaussettes ?</p>
-                </div>
-                <div class="answers-block">
-                    <input id="a1Q12"name="question12" type="radio" value="0">
-                    <label for="a1Q12">Rouge et jaune à petits pois<span class="wrongAnswer">Mauvaise réponse...<br>
-                        La réponse était ...!<br>
-                        <button><a href="#addition-block-anchor">L'ADDITION S'IL VOUS PLAÎT</a></button></span></label>
-                    <input id="a2Q12" name="question12" type="radio" value="0">
-                    <label for="a2Q12">Bleu et verte à étoiles<span class="wrongAnswer">Mauvaise réponse...<br>
-                        La réponse était ... !<br>
-                        <button><a href="#addition-block-anchor">L'ADDITION S'IL VOUS PLAÎT</a></button></span></label>
-                    <input id="a3Q12" name="question12" type="radio" value="0">
-                    <label for="a3Q12">Violet et rose avec des gnomes<span class="wrongAnswer">Mauvaise réponse...<br>
-                        La réponse était ... !<br>
-                        <button><a href="#addition-block-anchor">L'ADDITION S'IL VOUS PLAÎT</a></button></span></label>
-                    <input id="a4Q12" name="question12" type="radio" value="0">
-                    <label for="a4Q12">Elle n'avait pas de chaussettes<span class="wrongAnswer">Mauvaise réponse...
-                        La réponse était ... !<br>
-                        <button><a href="#addition-block-anchor">L'ADDITION S'IL VOUS PLAÎT</a></button></span></label>
-                </div>
-            </div>
-        </div>
-    </form>
-<!-- L'ADDITION -->
-<div id="addition-block-anchor">
-    <span></span>
-</div>
+<<<<<<< HEAD
 <!-- <div>
     <div class="addition-banner"><img src="https://raw.githubusercontent.com/cchapleau/reims-quiz/master/img/addition-test.png"></div>
 </div>
@@ -521,6 +157,369 @@
 			</div>
 		</div>
 </div> -->
+=======
+<div>
+    <div class="top-banner"></div>
+</div>
+<div class="container-other-questions">
+<div class="questions-block">
+					<div class="question-title">
+						<h3 id="Q3">Question 3</h3>
+					</div>
+					<div class="question-paragraph">
+						<p class="question">Un japonais à construis une chapelle dans Reims, quel est son nom ?</p>
+					</div>
+					<div class="answers-block">
+						<input id="a1Q3"name="question3" type="radio" value="0">
+						<label for="a1Q3">Chapelle Tokyo<span class="wrongAnswer">Mauvaise réponse...
+							La réponse était la Chapelle Foujita !<br>
+							<button><a href="#question4-block-anchor">QUESTION SUIVANTE</a></button></span></label>
+						<input id="a2Q3" name="question3" type="radio" value="1">
+						<label for="a2Q3">Chapelle Foujita<span class="goodAnswer">Félicitation tu as trouvé la bonne réponse !<br>
+							C'était bien la chapelle Foujita ! <br>
+							<button><a href="#question4-block-anchor">QUESTION SUIVANTE</a></button></span></label>
+						<input id="a3Q3" name="question3" type="radio" value="0">
+						<label for="a3Q3">Chapelle Osaka<span class="wrongAnswer">Mauvaise réponse...
+							La réponse était la Chapelle Foujita !<br>
+							<button><a href="#question4-block-anchor">QUESTION SUIVANTE</a></button></span></label>
+						<input id="a4Q3" name="question3" type="radio" value="0">
+						<label for="a4Q3">Chapelle Son Goku<span class="wrongAnswer">Mauvaise réponse...
+							La réponse était la Chapelle Foujita !<br>
+							<button><a href="#question4-block-anchor">QUESTION SUIVANTE</a></button></span></label>						       
+				    </div>
+		</div>
+	</div>
+
+	<!-- Question 4-->
+	<div id="question4-block-anchor">
+		<span></span>
+	</div>
+	<div>
+		<div class="top-banner"></div>
+	</div>
+	<div class="container-other-questions">
+	<div class="questions-block">
+						<div class="question-title">
+							<h3 id="Q4">Question 4</h3>
+						</div>
+						<div class="question-paragraph">
+							<p class="question">Quel est le surnom des habitants de Reims?</p>
+						</div>
+						<div class="answers-block">
+							<input id="a1Q4"name="question4" type="radio" value="0">
+							<label for="a1Q4">Les olives<span class="wrongAnswer">Mauvaise réponse...
+								La réponse était les cornichons !<br>
+								<button><a href="#question5-block-anchor">QUESTION SUIVANTE</a></button></span></label>
+							<input id="a2Q4" name="question4" type="radio" value="1">
+							<label for="a2Q4">Les cornichons<span class="goodAnswer">Félicitation tu as trouvé la bonne réponse !<br>
+								C'était bien les cornichons !<br>
+								<button><a href="#question5-block-anchor">QUESTION SUIVANTE</a></button></span></label>
+							<input id="a3Q4" name="question4" type="radio" value="0">
+							<label for="a3Q4">Les saucissons<span class="wrongAnswer">Mauvaise réponse...
+								La réponse était les cornichons !<br>
+								<button><a href="#question5-block-anchor">QUESTION SUIVANTE</a></button></span></label>
+							<input id="a4Q4" name="question4" type="radio" value="0">
+							<label for="a4Q4">La réponse 4<span class="wrongAnswer">Mauvaise réponse...
+								La réponse était les cornichons !<br>
+								<button><a href="#question5-block-anchor">QUESTION SUIVANTE</a></button></span></label>						       
+						</div>
+			</div>
+		</div>
+	<!-- Question 5-->
+	<div id="question5-block-anchor">
+		<span></span>
+	</div>
+	<div>
+		<div class="top-banner"></div>
+	</div>
+	<div class="container-other-questions">
+	<div class="questions-block">
+						<div class="question-title">
+							<h3 id="Q5">Question 5</h3>
+						</div>
+						<div class="question-paragraph">
+							<p class="question">Quel est le surnom des habitants de Reims?</p>
+						</div>
+						<div class="answers-block">
+							<input id="a1Q5"name="question5" type="radio" value="0">
+							<label for="a1Q5">Les olives<span class="wrongAnswer">Mauvaise réponse...
+								La réponse était les cornichons !<br>
+								<button><a href="#question6-block-anchor">QUESTION SUIVANTE</a></button></span></label>
+							<input id="a2Q5" name="question5" type="radio" value="1">
+							<label for="a2Q5">Les cornichons<span class="goodAnswer">Félicitation tu as trouvé la bonne réponse !<br>
+								C'était bien les cornichons !<br>
+								<button><a href="#question6-block-anchor">QUESTION SUIVANTE</a></button></span></label>
+							<input id="a3Q5" name="question5" type="radio" value="0">
+							<label for="a3Q5">Les saucissons<span class="wrongAnswer">Mauvaise réponse...
+								La réponse était les cornichons !<br>
+								<button><a href="#question6-block-anchor">QUESTION SUIVANTE</a></button></span></label>
+							<input id="a4Q5" name="question5" type="radio" value="0">
+							<label for="a4Q5">La réponse 4<span class="wrongAnswer">Mauvaise réponse...
+								La réponse était les cornichons !<br>
+								<button><a href="#question6-block-anchor">QUESTION SUIVANTE</a></button></span></label>						       
+						</div>
+			</div>
+		</div>
+	<!-- Question 6-->
+	<div id="question6-block-anchor">
+		<span></span>
+	</div>
+	<div>
+		<div class="top-banner"></div>
+	</div>
+	<div class="container-other-questions">
+	<div class="questions-block">
+						<div class="question-title">
+							<h3 id="Q6">Question 6</h3>
+						</div>
+						<div class="question-paragraph">
+							<p class="question">Quand a été créé la Wild Code School?</p>
+						</div>
+						<div class="answers-block">
+							<input id="a1Q6"name="question6" type="radio" value="0">
+							<label for="a1Q6">2019<span class="wrongAnswer">Mauvaise réponse...
+								L'école à été fondée en 2014 par Anna Stépanoff !<br>
+								<button><a href="#question7-block-anchor">QUESTION SUIVANTE</a></button></span></label>
+							<input id="a2Q6" name="question6" type="radio" value="0">
+							<label for="a2Q6">2001<span class="wrongAnswer">Mauvaise réponse...<br>
+								C'était bien 2014, l'école à été fondée par Anna Stépanoff ! !<br>
+								<button><a href="#question7-block-anchor">QUESTION SUIVANTE</a></button></span></label>
+							<input id="a3Q6" name="question6" type="radio" value="1">
+							<label for="a3Q6">2014<span class="goodAnswer">Félicitation tu as trouvé la bonne réponse !<br>
+								L'école à été fondée en 2014 par Anna Stépanoff !<br>
+								<button><a href="#question7-block-anchor">QUESTION SUIVANTE</a></button></span></label>
+							<input id="a4Q6" name="question6" type="radio" value="0">
+							<label for="a4Q6">Il y a bien longtemps dans une galaxie lointaine, très lointaine...<span class="wrongAnswer">Mauvaise réponse...
+								L'école à été fondée en 2014 par Anna Stépanoff !<br>
+								<button><a href="#question7-block-anchor">QUESTION SUIVANTE</a></button></span></label>						       
+						</div>
+			</div>
+		</div>
+			<!-- Question 7-->
+	<div id="question7-block-anchor">
+		<span></span>
+	</div>
+	<div>
+		<div class="top-banner"></div>
+	</div>
+	<div class="container-other-questions">
+	<div class="questions-block">
+						<div class="question-title">
+							<h3 id="Q7">Question 7</h3>
+						</div>
+						<div class="question-paragraph">
+							<p class="question">Comment s'appelle la place du centre ville de Reims ?</p>
+						</div>
+						<div class="answers-block">
+							<input id="a1Q7"name="question7" type="radio" value="1">
+							<label for="a1Q7">La place d'Erlon<span class="goodAnswer">Félicitation tu as trouvé la bonne réponse !<br>
+								La réponse était la place d'Erlon !<br>
+								<button><a href="#question8-block-anchor">QUESTION SUIVANTE</a></button></span></label>
+							<input id="a2Q7" name="question7" type="radio" value="0">
+							<label for="a2Q7">La place de l'étoile<span class="wrongAnswer">Mauvaise réponse...<br>
+								C'était bien la place d'Erlon !<br>
+								<button><a href="#question8-block-anchor">QUESTION SUIVANTE</a></button></span></label>
+							<input id="a3Q7" name="question7" type="radio" value="0">
+							<label for="a3Q7">La place Stanislas<span class="wrongAnswer">Mauvaise réponse...<br>
+								La réponse était la place d'Erlon !<br>
+								<button><a href="#question8-block-anchor">QUESTION SUIVANTE</a></button></span></label>
+							<input id="a4Q7" name="question7" type="radio" value="0">
+							<label for="a4Q7">La place du Chef<span class="wrongAnswer">Mauvaise réponse...
+								La réponse était la place d'Erlon !<br>
+								<button><a href="#question8-block-anchor">QUESTION SUIVANTE</a></button></span></label>						       
+						</div>
+			</div>
+		</div>
+			<!-- Question 8-->
+			<div id="question8-block-anchor">
+				<span></span>
+			</div>
+			<div>
+				<div class="top-banner"></div>
+			</div>
+			<div class="container-other-questions">
+			<div class="questions-block">
+								<div class="question-title">
+									<h3 id="Q8">Question 8</h3>
+								</div>
+								<div class="question-paragraph">
+									<p class="question">Quel est la particularité quand on étudie à la Wild Code School ?</p>
+								</div>
+								<div class="answers-block">
+									<input id="a1Q8"name="question8" type="radio" value="1">
+									<label for="a1Q8">Il faut être en chaussette<span class="goodAnswer">Félicitation tu as trouvé la bonne réponse !<br>
+										La réponse était qu'il faut être en chaussette !<br>
+										<button><a href="#question9-block-anchor">QUESTION SUIVANTE</a></button></span></label>
+									<input id="a2Q8" name="question8" type="radio" value="0">
+									<label for="a2Q8">Il est interdit de parler !<span class="wrongAnswer">Mauvaise réponse...<br>
+										La réponse était qu'il faut être en chaussette !<br>
+										<button><a href="#question9-block-anchor">QUESTION SUIVANTE</a></button></span></label>
+									<input id="a3Q8" name="question8" type="radio" value="0">
+									<label for="a3Q8">Il faut faire 10 exercices par jours !<span class="wrongAnswer">Mauvaise réponse...<br>
+										La réponse était qu'il faut être en chaussette !<br>
+										<button><a href="#question9-block-anchor">QUESTION SUIVANTE</a></button></span></label>
+									<input id="a4Q8" name="question8" type="radio" value="0">
+									<label for="a4Q8">Il faut posséder une baguette de sorcier !<span class="wrongAnswer">Mauvaise réponse...
+										La réponse était qu'il faut être en chaussette !<br>
+										<button><a href="#question9-block-anchor">QUESTION SUIVANTE</a></button></span></label>						       
+								</div>
+					</div>
+				</div>
+			<!-- Question 9-->
+			<div id="question9-block-anchor">
+				<span></span>
+			</div>
+			<div>
+				<div class="top-banner"></div>
+			</div>
+			<div class="container-other-questions">
+			<div class="questions-block">
+								<div class="question-title">
+									<h3 id="Q9">Question 9</h3>
+								</div>
+								<div class="question-paragraph">
+									<p class="question">Quel est la particularité quand on étudie à la Wild Code School ?</p>
+								</div>
+								<div class="answers-block">
+									<input id="a1Q9"name="question9" type="radio" value="0">
+									<label for="a1Q9">Le bus<span class="wrongAnswer">Mauvaise réponse...<br>
+										La réponse était le Tramway !<br>
+										<button><a href="#question10-block-anchor">QUESTION SUIVANTE</a></button></span></label>
+									<input id="a2Q9" name="question9" type="radio" value="1">
+									<label for="a2Q9">Le Tramway<span class="goodAnswer">Félicitation tu as trouvé la bonne réponse !<br>
+										La réponse était le Tramway !<br>
+										<button><a href="#question10-block-anchor">QUESTION SUIVANTE</a></button></span></label>
+									<input id="a3Q9" name="question9" type="radio" value="0">
+									<label for="a3Q9">Le TGV !<span class="wrongAnswer">Mauvaise réponse...<br>
+										La réponse était le Tramway !<br>
+										<button><a href="#question10-block-anchor">QUESTION SUIVANTE</a></button></span></label>
+									<input id="a4Q9" name="question9" type="radio" value="0">
+									<label for="a4Q9">Le poudlard Express !<span class="wrongAnswer">Mauvaise réponse...
+										La réponse était le Tramway !<br>
+										<button><a href="#question10-block-anchor">QUESTION SUIVANTE</a></button></span></label>						       
+								</div>
+					</div>
+				</div>
+			<!-- Question 10-->
+			<div id="question10-block-anchor">
+				<span></span>
+			</div>
+			<div>
+				<div class="top-banner"></div>
+			</div>
+			<div class="container-other-questions">
+			<div class="questions-block">
+								<div class="question-title">
+									<h3 id="Q10">Question 10</h3>
+								</div>
+								<div class="question-paragraph">
+									<p class="question">Où se situent les locaux de la WCS?</p>
+								</div>
+								<div class="answers-block">
+									<input id="a1Q10"name="question10" type="radio" value="1">
+									<label for="a1Q10">Près du centre ville<span class="goodAnswer">Félicitation tu as trouvé la bonne réponse !<br>
+										La réponse était près du centre ville !<br>
+										<button><a href="#question11-block-anchor">QUESTION SUIVANTE</a></button></span></label>
+									<input id="a2Q10" name="question10" type="radio" value="0">
+									<label for="a2Q10">A côté de la gare TGV de Bezannes<span class="wrongAnswer">Mauvaise réponse...<br>
+										La réponse était près du centre ville !<br>
+										<button><a href="#question11-block-anchor">QUESTION SUIVANTE</a></button></span></label>
+									<input id="a3Q10" name="question10" type="radio" value="0">
+									<label for="a3Q10">A côté de la fac de sciences<span class="wrongAnswer">Mauvaise réponse...<br>
+										La réponse était près du centre ville !<br>
+										<button><a href="#question11-block-anchor">QUESTION SUIVANTE</a></button></span></label>
+									<input id="a4Q10" name="question10" type="radio" value="0">
+									<label for="a4Q10">En terre du Milieu !<span class="wrongAnswer">Mauvaise réponse...
+										La réponse était près du centre ville !<br>
+										<button><a href="#question11-block-anchor">QUESTION SUIVANTE</a></button></span></label>						       
+								</div>
+					</div>
+				</div>
+			<!-- Question 11-->
+			<div id="question11-block-anchor">
+				<span></span>
+			</div>
+			<div>
+				<div class="top-banner"></div>
+			</div>
+			<div class="container-other-questions">
+			<div class="questions-block">
+								<div class="question-title">
+									<h3 id="Q11">Question 11</h3>
+								</div>
+								<div class="question-paragraph">
+									<p class="question">Quel est le nom du stade où joue l'équipe de Foot de Reims ?</p>
+								</div>
+								<div class="answers-block">
+									<input id="a1Q11"name="question11" type="radio" value="0">
+									<label for="a1Q11">Le stade Arnaud Robinet<span class="wrongAnswer">Mauvaise réponse...<br>
+										La réponse était le stade Auguste Delaune !<br>
+										<button><a href="#question12-block-anchor">QUESTION SUIVANTE</a></button></span></label>
+									<input id="a2Q11" name="question11" type="radio" value="0">
+									<label for="a2Q11">Le stade d'Erlon<span class="wrongAnswer">Mauvaise réponse...<br>
+										La réponse était le stade Auguste Delaune !<br>
+										<button><a href="#question12-block-anchor">QUESTION SUIVANTE</a></button></span></label>
+									<input id="a3Q11" name="question11" type="radio" value="1">
+									<label for="a3Q11">Le stade Auguste Delaune<span class="goodAnswer">Félicitation tu as trouvé la bonne réponse !<br>
+										La réponse était le stade Auguste Delaune !<br>
+										<button><a href="#question12-block-anchor">QUESTION SUIVANTE</a></button></span></label>
+									<input id="a4Q11" name="question11" type="radio" value="0">
+									<label for="a4Q11">Le stade terminal!<span class="wrongAnswer">Mauvaise réponse...
+										La réponse était le stade Auguste Delaune !<br>
+										<button><a href="#question12-block-anchor">QUESTION SUIVANTE</a></button></span></label>						       
+								</div>
+					</div>
+				</div>
+			<!-- Question 12-->
+			<div id="question12-block-anchor">
+				<span></span>
+			</div>
+			<div>
+				<div class="top-banner"></div>
+			</div>
+			<div class="container-other-questions">
+			<div class="questions-block">
+								<div class="question-title">
+									<h3 id="Q12">Question Bonus :</h3>
+								</div>
+								<div class="question-paragraph">
+									<p class="question">Selon la célèbre chanson de la mythique chanteuse Dorothé, de quelles couleurs étaient ses chaussettes ?</p>
+								</div>
+								<div class="answers-block">
+									<input id="a1Q12"name="question12" type="radio" value="0">
+									<label class="reponse" for="a1Q12">Rouge et jaune à petits pois<span class="wrongAnswer">Mauvaise réponse...<br>
+										La réponse était ...!<br>
+										<button><a href="#question13-block-anchor">QUESTION SUIVANTE</a></button></span></label>
+									<input id="a2Q12" name="question12" type="radio" value="0">
+									<label for="a2Q12">Bleu et verte à étoiles<span class="wrongAnswer">Mauvaise réponse...<br>
+										La réponse était ... !<br>
+										<button><a href="#question13-block-anchor">QUESTION SUIVANTE</a></button></span></label>
+									<input id="a3Q12" name="question12" type="radio" value="0">
+									<label for="a3Q12">Violet et rose avec des gnomes<span class="wrongAnswer">Mauvaise réponse...<br>
+										La réponse était ... !<br>
+										<button><a href="#question13-block-anchor">QUESTION SUIVANTE</a></button></span></label>
+									<input id="a4Q12" name="question12" type="radio" value="0">
+									<label for="a4Q12">Elle n'avait pas de chaussettes<span class="wrongAnswer">Mauvaise réponse...
+										La réponse était ... !<br>
+										<button><a href="#question13-block-anchor">QUESTION SUIVANTE</a></button></span></label>						       
+								</div>
+					</div>
+				</div>
+		
+<!-- scoring-->
+	<div class="scoring-block">
+		<span>test</span>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+>>>>>>> 1b6891a373fc2c3e9c55d4fd27da096bd22eb097
 
 
 
@@ -559,6 +558,7 @@
 
 
 
+<<<<<<< HEAD
 
 
 	<footer id="footer">
@@ -576,9 +576,36 @@
 
 	<img class=reimsfooter src=img/Reimsfooter.jpg alt= "imgReims">
 
+=======
+<footer>
+	<div class=imgfooter>
+		<a href="https://alexcorrette2a.github.io/Wild-Book/"><img class=classfooter src=img/Classefooter.jpg alt= "imgClass" ></a>
+	
+		<a href="https://www.wildcodeschool.com/fr-FR"><img class=wildfooter src=img/Wildfooter.png alt= "imgWild"></a>
+	
+		<a href="https://enzogaudry.github.io/Project_Sacre_Campus/"><img class=reimsfooter src=img/Reimsfooter.jpg alt= "imgReims"></a>
+>>>>>>> 1b6891a373fc2c3e9c55d4fd27da096bd22eb097
 	</div>
-
-	</footer>
-
-	</body>
-</html>
+	
+		<p class=footertitle> Merci d'avoir répondu à toutes les questions, c'était un quiz créé par :</p>
+	
+		<p><a href="https://github.com/BrunoLagasse"><img class=gitLogoFooter src=img/GitHubLogo.png alt ="GitHubLogo"></a>
+			Bruno Lagasse<a href="https://www.linkedin.com/in/bruno-lagasse-8a699716a/">
+		<img class=linkedinLogo src=img/LinkedinLogo.png alt="LinkedinLogo"></a></p>
+	
+		<p><a href="https://github.com/Damien008"><img class=gitLogoFooter src=img/GitHubLogo.png alt ="GitHubLogo"></a>
+			Damien Lambert<a href="https://www.linkedin.com/in/damien-lambert-98b2b01b8/">
+			<img class=linkedinLogo src=img/LinkedinLogo.png alt="LinkedinLogo"></a></p>
+	
+		<p><a href="https://github.com/cchapleau"><img class=gitLogoFooter src=img/GitHubLogo.png alt ="GitHubLogo"></a>
+			Christophe Chapleau<a href="https://www.linkedin.com/in/christophe-chapleau-0b92b51b8/">
+			<img class=linkedinLogo src=img/LinkedinLogo.png alt="LinkedinLogo"></a></p>  
+	
+		<p><a href="https://github.com/alicepetitjean"><img class=gitLogoFooter src=img/GitHubLogo.png alt ="GitHubLogo"></a>
+			Alice Petitjean<a href="https://www.linkedin.com/in/alice-petitjean-36729419b/">
+			<img class=linkedinLogo src=img/LinkedinLogo.png alt="LinkedinLogo"></a></p>
+			</div>
+		</footer>
+	
+</body>
+</html>	
