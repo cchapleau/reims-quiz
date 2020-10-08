@@ -1,9 +1,15 @@
 /***** GENERAL - BEGIN *****/
 @font-face{
-  font-family:'ArchitectsDaughter-Regular';
+  font-family:'ArchitectsDaughter-Regular' 'PermanentMarker-Regular';
   src: url('ArchitectsDaughter-Regular.ttf')
   format('truetype');
+  src: url('PermanentMarker-Regular.ttf') format('truetype');
 }
+
+
+/* html {
+  overflow-y: hidden;
+} */
 
 .top-banner {
   height: 12vh;
@@ -499,8 +505,94 @@ input:checked + #reponse1 {
 }
 
 .container-addition {
-  height: 80vh;
+  display: flex;
+  background-color: #1d1b1b;
+  min-height: 100vh;
 }
+
+.scoring-block-addition {
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  height: 80vh;
+  top: 36vh;
+  top: 0;
+  width: 98%;
+}
+
+.addition-image {
+  width: 40%;
+  margin-right: -2vw;
+  padding-right: -2vw;
+}
+.addition-image img {
+  width: 95%;
+  height: auto;
+}
+
+/** test addition flexbox - begin **/
+
+.test-container-addition {
+  position: relative;
+  display: flex;
+  height: 100vh;
+}
+
+.box-left {
+  height: 100vh;
+  width: 70%;
+}
+
+.box-left1 {
+  display: flex;
+  justify-content: center;
+  background-color: #1d1b1b;
+  height: 20vh;
+}
+
+.box-left1 img {
+  width: 80%;
+  height: auto;
+}
+
+.box-left2 {
+  background-color: #1d1b1b;
+  height: 80vh;
+  padding: 5vh 1vw 0vh 4.5vw;
+}
+
+.thanks {
+  font-family: "PermanentMarker-Regular";
+  color: #fff;
+  font-size: 6vw;
+  font-weight: 700;
+}
+
+.box-right {
+  height: 100vh;
+  width: 40%
+}
+
+.box-right1 {
+  background-color: #1d1b1b;
+  height: 6vh;
+}
+
+.box-right2 {
+  height: 94vh;
+  margin-top: -1px;
+}
+
+.box-right2 img {
+  width: 100%;
+}
+
+.creator {
+  text-align: center;
+}
+
+
+/** test addition flexbox - end **/
 
 /**** ADDITION BLOCK - END *****/
 
