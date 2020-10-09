@@ -254,6 +254,10 @@ h3 {
   padding-top: 12vh;
 }
 
+.questions-block-anchor {
+  padding-top: 12vh;
+}
+
 #question2-block-anchor, #question3-block-anchor, #question4-block-anchor, #question5-block-anchor, #question6-block-anchor, #question7-block-anchor, #question8-block-anchor, #question9-block-anchor, #question10-block-anchor, #question11-block-anchor, #question12-block-anchor, #addition-block-anchor {
   padding-top: 12vh;
 }
