@@ -56,12 +56,12 @@
 </div>
 <section class="presentation-block">
     <div class="presentation-title">
-        <h2>Presentation du Quiz</h2>
+        <h2>Le Reims Quiz</h2>
     </div>
     <div class="presentation-paragraph">
-        <p>A travers ce quiz vous allez découvrir des anecdotes sur Reims et la Wild Code School.
-			Amusez-vous bien!
-		</p>
+        <span>Nous vous présentons The Quiz Of la ville de Reims !!</span>
+        <span>A travers ce quiz vous allez découvrir des anecdotes sur la ville Reims et sur la Wild Code School.</span>
+        <span>Amusez vous bien !!</p>
     </div>
     <div class="presentation-button">
         <div class ="go-play-button">
@@ -74,20 +74,22 @@
     <span></span>
 </div>
 <div>
-    <div class="general-banner"><img src="https://raw.githubusercontent.com/cchapleau/reims-quiz/master/img/reims-quiz-test.png" alt="reimsquiztest"></div>
+    <div class="general-banner"><img src="https://raw.githubusercontent.com/cchapleau/reims-quiz/master/img/reims-quiz-test.png" alt="Reims Quiz"></div>
+</div>
+<div id="questions-block-anchor">
+    <span></span>
 </div>
     <form action="#" oninput="score.value=parseInt(question1.value || 0)+parseInt(question2.value || 0)+parseInt(question3.value || 0)+parseInt(question4.value || 0)+parseInt(question5.value || 0)+parseInt(question6.value || 0)+parseInt(question7.value || 0)+parseInt(question8.value || 0)+parseInt(question9.value || 0)+parseInt(question10.value || 0)+parseInt(question11.value || 0)+parseInt(question12.value || 0)">
         <div class="scoring-block-sticky">
             <div class="box1"></div>
                 <div class="scoring-image">
-                    <div class="next-question-button">
+                    <!-- <div class="next-question-button">
                         <a href="#question2-block-anchor">QUESTION SUIVANTE</a>
-                    </div>
+                    </div> -->
                     <img src="https://raw.githubusercontent.com/cchapleau/Merge-and-conflits/master/Scoring-test5.png" alt="a remplir">
-                    <p><output id="score" name="score">0</output></p>
+                    <p><output id="score" name="score"></output></p>
                 </div>
-            </div>
-
+        </div>
 <!-- QUESTION 1 -->
         <div class="container-first-television">
             <div class="questions-block">
@@ -95,7 +97,7 @@
                     <h3 id="Q1">Question 1</h3>
                 </div>
                 <div class="question-paragraph">
-                    <span class="question">Quel monument de Reims à vu le sacre de plusieurs rois ?</span>
+                    <span>Quel monument de Reims à vu le sacre de plusieurs rois ?</span>
                 </div>
                 <div class="answers-block">
                     <input id="a1Q1" name="question1" type="radio" value="0">
@@ -106,6 +108,9 @@
                     <label for="a3Q1">L'église St André<span class="wrongAnswer">Mauvaise réponse... </span></label>
                     <input id="a4Q1" name="question1" type="radio" value="0">
                     <label for="a4Q1">L'étoile de la mort<span class="wrongAnswer">Mauvaise réponse... </span></label>
+                </div>
+                <div class="next-question-button">
+                    <a href="#question2-block-anchor">QUESTION SUIVANTE</a>
                 </div>
             </div>
         </div>
@@ -134,6 +139,9 @@
                     <input id="a4Q2" name="question2" type="radio" value="0">
                     <label for="a4Q2">Avoir une recommandation d'Alain Chabat<span class="wrongAnswer">Mauvaise réponse...</span></label>
                 </div>
+                <div class="next-question-button">
+                    <a href="#question3-block-anchor">QUESTION SUIVANTE</a>
+                </div>
             </div>
         </div>
 <!-- QUESTION 3 -->
@@ -161,6 +169,9 @@
                     <input id="a4Q3" name="question3" type="radio" value="0">
                     <label for="a4Q3">Chapelle Son Goku<span class="wrongAnswer">Mauvaise réponse...</span></label>
                 </div>
+                <div class="next-question-button">
+                    <a href="#question4-block-anchor">QUESTION SUIVANTE</a>
+                </div>
             </div>
         </div>
 <!-- QUESTION 4 -->
@@ -176,7 +187,7 @@
                     <h3 id="Q4">Question 4</h3>
                 </div>
                 <div class="question-paragraph">
-                    <p class="question">Quel langage est enseigné à la Wild Code School?</p>
+                    <p class="question">Quel langage est enseigné à la Wild Code School ?</p>
                 </div>
                 <div class="answers-block">
                     <input id="a1Q4" name="question4" type="radio" value="0">
@@ -187,6 +198,9 @@
                     <label for="a3Q4">Pascal<span class="wrongAnswer">Mauvaise réponse...</span></label>
                     <input id="a4Q4" name="question4" type="radio" value="0">
                     <label for="a4Q4">Le Klingon<span class="wrongAnswer">Mauvaise réponse...</span></label>
+                </div>
+                <div class="next-question-button">
+                    <a href="#question5-block-anchor">QUESTION SUIVANTE</a>
                 </div>
             </div>
         </div>
@@ -203,7 +217,7 @@
                     <h3 id="Q5">Question 5</h3>
                 </div>
                 <div class="question-paragraph">
-                    <p class="question">Quel est le surnom des habitants de Reims?</p>
+                    <p class="question">Quel est le surnom des habitants de Reims ?</p>
                 </div>
                 <div class="answers-block">
                     <input id="a1Q5" name="question5" type="radio" value="0">
@@ -214,6 +228,9 @@
                     <label for="a3Q5">Les saucissons<span class="wrongAnswer">Mauvaise réponse...</span></label>
                     <input id="a4Q5" name="question5" type="radio" value="0">
                     <label for="a4Q5">La réponse 4<span class="wrongAnswer">Mauvaise réponse...</span></label>
+                </div>
+                <div class="next-question-button">
+                    <a href="#question6-block-anchor">QUESTION SUIVANTE</a>
                 </div>
             </div>
         </div>
@@ -230,7 +247,7 @@
                     <h3 id="Q6">Question 6</h3>
                 </div>
                 <div class="question-paragraph">
-                    <p class="question">Quand a été créé la Wild Code School?</p>
+                    <p class="question">Quand a été créé la Wild Code School ?</p>
                 </div>
                 <div class="answers-block">
                     <input id="a1Q6" name="question6" type="radio" value="0">
@@ -240,7 +257,10 @@
                     <input id="a3Q6" name="question6" type="radio" value="1">
                     <label for="a3Q6">2014<span class="goodAnswer">Félicitation tu as trouvé la bonne réponse !</span></label>
                     <input id="a4Q6" name="question6" type="radio" value="0">
-                    <label for="a4Q6">Il y a bien longtemps dans une galaxie lointaine, très lointaine...<span class="wrongAnswer">Mauvaise réponse...</span></label>
+                    <label for="a4Q6">Il y a bien longtemps dans une galaxie lointaine ...<span class="wrongAnswer">Mauvaise réponse...</span></label>
+                </div>
+                <div class="next-question-button">
+                    <a href="#question7-block-anchor">QUESTION SUIVANTE</a>
                 </div>
             </div>
         </div>
@@ -269,6 +289,9 @@
                     <input id="a4Q7" name="question7" type="radio" value="0">
                     <label for="a4Q7">La place du Chef<span class="wrongAnswer">Mauvaise réponse...</span></label>
                 </div>
+                <div class="next-question-button">
+                    <a href="#question8-block-anchor">QUESTION SUIVANTE</a>
+                </div>
             </div>
         </div>
 <!-- QUESTION 8 -->
@@ -296,6 +319,9 @@
                     <input id="a4Q8" name="question8" type="radio" value="0">
                     <label for="a4Q8">Il faut posséder une baguette de sorcier !<span class="wrongAnswer">Mauvaise réponse...</span></label>
                 </div>
+                <div class="next-question-button">
+                    <a href="#question9-block-anchor">QUESTION SUIVANTE</a>
+                </div>
             </div>
         </div>
 <!-- QUESTION 9 -->
@@ -311,7 +337,7 @@
                     <h3 id="Q9">Question 9</h3>
                 </div>
                 <div class="question-paragraph">
-                    <p class="question">Quel moyen de transport en commun a fait son grand retour à Reims le 18 avril 2011?</p>
+                    <p class="question">Quel moyen de transport a fait son grand retour à Reims le 18 avril 2011 ?</p>
                 </div>
                 <div class="answers-block">
                     <input id="a1Q9" name="question9" type="radio" value="0">
@@ -322,6 +348,9 @@
                     <label for="a3Q9">Le TGV !<span class="wrongAnswer">Mauvaise réponse...</span></label>
                     <input id="a4Q9" name="question9" type="radio" value="0">
                     <label for="a4Q9">Le poudlard Express !<span class="wrongAnswer">Mauvaise réponse...</span></label>
+                </div>
+                <div class="next-question-button">
+                    <a href="#question10-block-anchor">QUESTION SUIVANTE</a>
                 </div>
             </div>
         </div>
@@ -338,7 +367,7 @@
                     <h3 id="Q10">Question 10</h3>
                 </div>
                 <div class="question-paragraph">
-                    <p class="question">Où se situent les locaux de la Wild Code School?</p>
+                    <p class="question">Où se situent les locaux de la Wild Code School ?</p>
                 </div>
                 <div class="answers-block">
                     <input id="a1Q10" name="question10" type="radio" value="1">
@@ -349,6 +378,9 @@
                     <label for="a3Q10">A côté de la fac de sciences<span class="wrongAnswer">Mauvaise réponse...</span></label>
                     <input id="a4Q10" name="question10" type="radio" value="0">
                     <label for="a4Q10">En terre du Milieu !<span class="wrongAnswer">Mauvaise réponse...</span></label>
+                </div>
+                <div class="next-question-button">
+                    <a href="#question11-block-anchor">QUESTION SUIVANTE</a>
                 </div>
             </div>
         </div>
@@ -377,6 +409,9 @@
                     <input id="a4Q11" name="question11" type="radio" value="0">
                     <label for="a4Q11">Le stade terminal!<span class="wrongAnswer">Mauvaise réponse...</span></label>
                 </div>
+                <div class="next-question-button">
+                    <a href="#question12-block-anchor">QUESTION SUIVANTE</a>
+                </div>
             </div>
         </div>
 <!-- QUESTION BONUS -->
@@ -392,7 +427,7 @@
                     <h3 id="Q12">Question Bonus</h3>
                 </div>
                 <div class="question-paragraph">
-                    <p class="question">Selon la célèbre chanson de Dorothée, de quelles couleurs sont ses chaussettes ?</p>
+                    <p class="question">Selon la chanson de Dorothée, de quelles couleurs sont ses chaussettes ?</p>
                 </div>
                 <div class="answers-block">
                     <input id="a1Q12" name="question12" type="radio" value="1">
@@ -404,6 +439,9 @@
                     <input id="a4Q12" name="question12" type="radio" value="0">
                     <label for="a4Q12">Elle n'avait pas de chaussettes<span class="wrongAnswer">Mauvaise réponse...</span></label>
                 </div>
+                <div class="next-question-button">
+                    <a href="#addition-block-anchor">L'ADDITION SVP</a>
+                </div>
             </div>
         </div>
     </form>
@@ -412,13 +450,15 @@
     <span></span>
 </div>
 
-<div class="test-container-addition">
+<div class="container-addition">
 	<div class="box-left">
 		<div class="box-left1"><img src="https://raw.githubusercontent.com/cchapleau/reims-quiz/master/img/addition-test.png" alt="additiontest"></div>
 		<div class="box-left2">
 			<div>
 				<p class="thanks">Merci d'avoir participé à ce quiz</p>
-				<p class="creator"><a href="#footer">remerciements</a></p>
+				<div class="next-question-button">
+                    <a href="#footer">REMERCIEMENTS</a>
+                </div>
 			</div>
 		</div>
 	</div>
@@ -428,50 +468,58 @@
 	</div>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<footer>
-	<div class=imgfooter>
-		<a href="https://alexcorrette2a.github.io/Wild-Book/"><img class=classfooter src=img/Classefooter.jpg alt= "imgClass" ></a>
-
-		<a href="https://www.wildcodeschool.com/fr-FR"><img class=wildfooter src=img/Wildfooter.png alt= "imgWild"></a>
-
-		<a href="https://enzogaudry.github.io/Project_Sacre_Campus/"><img class=reimsfooter src=img/Reimsfooter.jpg alt= "imgReims"></a>
+<footer id="footer">
+	<div class="imgfooter">
+		<a href="https://www.wildcodeschool.com/fr-FR" target="_blank"><img class="wildfooter" src="img/Wildfooter.png" alt="Wild Code Scool de Reims"></a>
+		<a href="https://alexcorrette2a.github.io/Wild-Book/" target="_blank"><img class="classfooter" src="img/Classefooter.jpg" alt="Promotion Horizon | Formation PHP à la Wild Code School 2020-2021 " ></a>
+		<a href="https://enzogaudry.github.io/Project_Sacre_Campus/" target="_blank"><img class="reimsfooter" src="img/Reimsfooter.jpg" alt="Sacré Campus de Reims"></a>
 	</div>
+    <p class="footertitle1">Merci d'avoir répondu à toutes les questions.</p>
+    <p class="footertitle1">Nous espérons que vous avez apprécié !!</p>
+    <p class="footertitle2"> Reims Quiz à été réalisé par :</p>
+    <div class="creators">
+        <div class="creator-block">
+            <div class="creator-name">Alice Petitjean</div>
+            <div class="creator-logos">
+                <a href="https://github.com/alicepetitjean"><img class="gitLogoFooter" src="img/GitHubLogo.png" alt ="GitHub Alice Petitjean"></a><a href="https://www.linkedin.com/in/alice-petitjean-36729419b/"><img class="linkedinLogo" src="img/LinkedinLogo.png" alt="Linked In Alice Petitjean"></a>
+            </div>
+        </div>
+        <div class="creator-block">
+            <div class="creator-name">Bruno Lagasse</div>
+            <div class="creator-logos">
+                <a href="https://github.com/BrunoLagasse"><img class="gitLogoFooter" src="img/GitHubLogo.png" alt ="GitHub Bruno Lagasse"></a><a href="https://www.linkedin.com/in/bruno-lagasse-8a699716a/">
+                <img class="linkedinLogo" src="img/LinkedinLogo.png" alt="LinkedIn Bruno Lagasse"></a>
+            </div>
+        </div>
+        <div class="creator-block">
+            <div class="creator-name">Damien Lambert</div>
+            <div class="creator-logos">
+                <a href="https://github.com/Damien008"><img class="gitLogoFooter" src="img/GitHubLogo.png" alt ="GitHub Damien Lambert"></a><a href="https://www.linkedin.com/in/damien-lambert-98b2b01b8/"><img class="linkedinLogo" src="img/LinkedinLogo.png" alt="LinkedIn Damien Lambert"></a>
+            </div>
+        </div>
+        <div class="creator-block">
+            <div class="creator-name">Christophe Chapleau</div>
+            <div class="creator-logos">
+                <a href="https://github.com/cchapleau"><img class="gitLogoFooter" src="img/GitHubLogo.png" alt ="GitHub Christophe Chapleau"></a><a href="https://www.linkedin.com/in/christophe-chapleau-0b92b51b8/"><img class="linkedinLogo" src="img/LinkedinLogo.png" alt="LinkedIn Christophe Chapleau"></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <span>© 2020 Promotion Horizon | Wild Code School Reims - Tous droits réservés</span>
+    </div>
 
-		<p class=footertitle> Merci d'avoir répondu à toutes les questions, c'était un quiz créé par :</p>
-
-		<p><a href="https://github.com/BrunoLagasse"><img class=gitLogoFooter src=img/GitHubLogo.png alt ="GitHubLogo"></a>
-			Bruno Lagasse<a href="https://www.linkedin.com/in/bruno-lagasse-8a699716a/">
-		<img class=linkedinLogo src=img/LinkedinLogo.png alt="LinkedinLogo"></a></p>
-
-		<p><a href="https://github.com/Damien008"><img class=gitLogoFooter src=img/GitHubLogo.png alt ="GitHubLogo"></a>
-			Damien Lambert<a href="https://www.linkedin.com/in/damien-lambert-98b2b01b8/">
-			<img class=linkedinLogo src=img/LinkedinLogo.png alt="LinkedinLogo"></a></p>
-
-		<p><a href="https://github.com/cchapleau"><img class=gitLogoFooter src=img/GitHubLogo.png alt ="GitHubLogo"></a>
-			Christophe Chapleau<a href="https://www.linkedin.com/in/christophe-chapleau-0b92b51b8/">
-			<img class=linkedinLogo src=img/LinkedinLogo.png alt="LinkedinLogo"></a></p>  
-
-		<p><a href="https://github.com/alicepetitjean"><img class=gitLogoFooter src=img/GitHubLogo.png alt ="GitHubLogo"></a>
-			Alice Petitjean<a href="https://www.linkedin.com/in/alice-petitjean-36729419b/">
-			<img class=linkedinLogo src=img/LinkedinLogo.png alt="LinkedinLogo"></a></p>
 	</footer>
 	</body>
 </html>
+
+
+
+
+<!-- <div class="presentation-title">
+    <h2>Presentation du Quiz</h2>
+</div>
+<div class="presentation-paragraph">
+    <p>A travers ce quiz vous allez découvrir des anecdotes sur Reims et la Wild Code School.
+        Amusez-vous bien!
+    </p>
+</div> -->
